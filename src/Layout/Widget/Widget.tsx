@@ -1,4 +1,4 @@
-import styles from '../Layout.module.css'
+import styles from './widget.module.css'
 
 export const Widget = () => {
   return (

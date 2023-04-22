@@ -1,10 +1,10 @@
-import styles from '../Layout.module.css'
+import styles from './content.module.css'
 
 export const Content = () => {
   return (
     <section className={styles['content']}>
     <div className={styles['search-bar']}>
-      <input type="search" name='search' id='search' placeholder='Search' />
+      <input type="search" className='search-bar-input' name='search' id='search' placeholder='Search' />
     </div>
 
     <div className={styles['recently-used']}> 

@@ -1,0 +1,12 @@
+.widget-area{
+    display:grid;
+    left: 194px;
+    top: 0px;
+    background: #F5F6FC;
+    grid-area: widget-area;
+    grid-template-rows: repeat(1fr,3);
+    grid-template-areas: 
+      "widget-profile"
+      "widget-graph"
+      "widget-ads";
+  }

@@ -1,0 +1,23 @@
+.content{
+    display:grid;
+    left: 194px;
+    top: 0px;
+    margin: 0 22px 0 22px;
+    padding-left:16px;
+    background: #F5F6FC;
+    grid-area: content-area;
+    grid-template-rows: repeat(1fr,4);
+    grid-template-areas: 
+      "content-search-bar"
+      "content-recently-used"
+      "content-recent-files"
+      "content-share-w-me";
+  }
+
+.search-bar-input{
+    width: 500px;
+    height: 29px;
+
+    background: white;
+    border-radius: 5px;
+}

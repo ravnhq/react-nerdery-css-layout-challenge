@@ -22,78 +22,10 @@ body,
   color:var(--darkblue);
 }
 
-
 .layout-container{
   display:grid;
   height:100vh;
   width:100%;
   grid-template-columns: 172px 1fr 252px;
   grid-template-areas: "nav-bar content-area widget-area";
-}
-
-.navigation-bar{
-  display:grid;
-  left: 0px;
-  top: 0px;
-  background: var(--darkblue);
-  grid-area: nav-bar;
-}
-
-.navigation-bar  ul{
-  margin-top: 123px;
-  max-width: 170px;
-  list-style: none;
-}
-
-.navigation-bar ul li::before {
-  content: "□";
-  color: white;
-  font-weight: bold;
-  font-size: 40px;
-  display: inline-block; 
-  width: 1em;
-  margin-left: -1em;
-}
-
-.navigation-bar ul li{
-  display: flex;
-  align-items: center;
-  justify-content: left;
-  margin-left: 20px;
-  margin-bottom:33px;
-
-  font-size: 14px;
-  line-height: 12px;
-  color: #FFFFFF;
-}
-
-.content{
-  display:grid;
-  left: 194px;
-  top: 0px;
-  margin: 0 22px 0 22px;
-  padding-left:16px;
-  background: #F5F6FC;
-  grid-area: content-area;
-  grid-template-rows: repeat(1fr,4);
-  grid-template-areas: 
-    "content-search-bar"
-    "content-recently-used"
-    "content-recent-files"
-    "content-share-w-me";
-}
-
-
-
-.widget-area{
-  display:grid;
-  left: 194px;
-  top: 0px;
-  background: #F5F6FC;
-  grid-area: widget-area;
-  grid-template-rows: repeat(1fr,3);
-  grid-template-areas: 
-    "widget-profile"
-    "widget-graph"
-    "widget-ads";
 }

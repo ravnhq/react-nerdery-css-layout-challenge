@@ -1,0 +1,35 @@
+.navigation-bar{
+    display:grid;
+    left: 0px;
+    top: 0px;
+    background: var(--darkblue);
+    grid-area: nav-bar;
+  }
+  
+  .navigation-bar  ul{
+    margin-top: 123px;
+    max-width: 170px;
+    list-style: none;
+  }
+  
+  .navigation-bar ul li::before {
+    content: "□";
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+  }
+  
+  .navigation-bar ul li{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-left: 20px;
+    margin-bottom:33px;
+  
+    font-size: 14px;
+    line-height: 12px;
+    color: #FFFFFF;
+  }
