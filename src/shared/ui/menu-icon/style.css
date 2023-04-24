@@ -1,0 +1,7 @@
+.icon {
+  box-sizing: border-box;
+  width: 15px;
+  height: 15px;
+
+  outline: 1px solid #ffffff;
+}
