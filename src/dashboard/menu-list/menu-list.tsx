@@ -1,4 +1,4 @@
-import MenuItem from "../menu-item/menu-item";
+import NavItem from "../nav-item/nav-item";
 import "./styles.css"
 
 const MenuList = () => {
@@ -14,7 +14,7 @@ const MenuList = () => {
   return (
     <div className="menu-list">
       {items.map((item, idx) => (
-        <MenuItem key={idx} name={item.name} active={item.active} />
+        <NavItem key={idx} name={item.name} active={item.active} />
       ))}
     </div>
   );
