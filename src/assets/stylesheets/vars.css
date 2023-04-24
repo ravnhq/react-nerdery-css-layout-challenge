@@ -1,0 +1,10 @@
+:root {
+    --MAIN-GRADIENT: linear-gradient(270.15deg, #689FF8 0.15%, #FF6860 54.7%, #FF9F00 99.9%);
+    --DARK-BG: #343951;
+    --CUSTOM-YELLOW: #FF9F00;
+    --LIGHT-BG: #F5F6FC;
+    --CUSTOM-GREEN: #4AC29D;
+    --CUSTOM-RED: #FF6860;
+    --CUSTOM-GRAY: #BCBECA;
+    --CUSTOM-BLUE: #689FF8;
+}
