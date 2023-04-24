@@ -8,6 +8,7 @@ ul {
 
 .navbar-main {
     height: 100vh;
+    position: relative;
 }
 
 #app-logo {
@@ -34,11 +35,10 @@ ul {
     padding: 0 1.75rem;
     background: transparent;
     color: white;
-    height: 70vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
+    position: absolute;
+    width: 75%;
     padding-bottom: 1.7rem;
+    bottom: 1rem;
 }
 
 .dialog-items {
