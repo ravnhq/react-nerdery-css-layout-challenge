@@ -1,0 +1,33 @@
+.layout{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 20% 50% 28% ;   
+}
+.cell{
+    /* outline: 1px solid blue; */
+    height: 100vh;
+    background-color: #F5F6FC;
+}
+
+.cell:first-child{
+    background-color: #343951;
+}
+
+.layout .cell:last-child{
+    justify-self: end;
+}
+
+
+/* .small{
+    height: 21px;
+    width: 74px;
+    border-radius: 5px;
+}
+.large{
+    height: 73px;
+    width: 119px;
+    border-radius: 10px;
+}
+.rectangle{
+    background: linear-gradient(to right, #FF9F00, #FF6860,#689EF8);
+} */
