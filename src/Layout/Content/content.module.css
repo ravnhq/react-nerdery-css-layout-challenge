@@ -1,23 +1,116 @@
 .content{
     display:grid;
-    left: 194px;
-    top: 0px;
     margin: 0 22px 0 22px;
-    padding-left:16px;
+    padding: 0 16px 0 16px;
     background: #F5F6FC;
     grid-area: content-area;
-    grid-template-rows: repeat(1fr,4);
+    grid-auto-rows: max-content;
+    row-gap: 38px;
+    align-items: start;
     grid-template-areas: 
       "content-search-bar"
       "content-recently-used"
       "content-recent-files"
       "content-share-w-me";
-  }
+}
+
+.search-bar{
+  display: flex;
+  height: 49px;
+  width: 100%;
+  margin-top: 25px;
+  align-items: center;
+  gap:10px;
+  background: white;
+  border-radius: 5px;
+  grid-area: content-search-bar;
+}
 
 .search-bar-input{
-    width: 500px;
-    height: 29px;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  background-color: transparent;
+  border: 0px solid;
+}
 
-    background: white;
-    border-radius: 5px;
+.search-bar svg,
+.search-bar-input{
+  margin-left:20px;
+  color: var(--gray);
+}
+
+.recently-used{
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: auto;
+  grid-area:content-recently-used;
+}
+
+.box-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  grid-auto-rows: max-content;
+}
+
+.box{
+  background: #FFFFFF;
+  box-shadow: 0px 4px 16px rgba(58, 58, 58, 0.07);
+  border-radius: 12px;
+  min-width: 165px;
+  height: auto;
+}
+
+.box-icons{
+  display: flex;
+  gap:30px;
+  margin-top:15px;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-title{
+  display:flex;
+  color: var(--darkblue);
+  height: 40px;
+  margin:15px 0 0 15px;
+  justify-content: left;
+  align-items: center;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 14px;
+}
+
+.box-date{
+  display:flex;
+  color: var(--inactive);
+  height: 40px;
+  margin:15px 0 0 15px;
+  justify-content: left;
+  align-items: center;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 14px;
+}
+
+.recent-files{
+  display: flex;
+  width: auto;
+  height:auto;
+  grid-area:content-recent-files;
+}
+
+.share-w-me{
+  display: flex;
+  width: auto;
+  height:auto;
+  grid-area:content-share-w-me;
 }

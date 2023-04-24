@@ -8,28 +8,41 @@
   
   .navigation-bar  ul{
     margin-top: 123px;
-    max-width: 170px;
+    max-width: auto;
+    padding:0;
     list-style: none;
   }
-  
-  .navigation-bar ul li::before {
-    content: "□";
-    color: white;
-    font-weight: bold;
-    font-size: 40px;
-    display: inline-block; 
-    width: 1em;
-    margin-left: -1em;
+
+  .navigation-bar ul li span{
+    display: flex;
+    padding-left: 25px;
+    gap:30px;
   }
   
   .navigation-bar ul li{
     display: flex;
+    width: auto;
+    height:44px;
     align-items: center;
     justify-content: left;
-    margin-left: 20px;
     margin-bottom:33px;
+    cursor:pointer;
   
     font-size: 14px;
     line-height: 12px;
-    color: #FFFFFF;
+    color: var(--inactive);
+  }
+
+  .navigation-bar ul li:hover{
+    color:white;
+    background-color: var(--orange);
+    border-left: 7px solid white;
+    border-radius: 7px;
+  }
+
+  li.selected{
+    color:black;
+    background-color: var(--orange);
+    border-left: 7px solid white;
+    border-radius: 7px;
   }
