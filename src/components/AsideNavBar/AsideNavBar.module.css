@@ -9,6 +9,7 @@ ul {
 .navbar-main {
     height: 100vh;
     position: relative;
+    background-color: var(--DARK-BG);
 }
 
 #app-logo {

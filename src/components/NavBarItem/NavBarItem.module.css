@@ -34,11 +34,3 @@ p {
     border-top-right-radius: 7px;
     border-bottom-right-radius: 7px;
 }
-
-
-#nav-icon{
-    width: 0.9rem;
-    height: 0.9rem;
-    border: 1px solid white;
-    align-self: center;
-}
