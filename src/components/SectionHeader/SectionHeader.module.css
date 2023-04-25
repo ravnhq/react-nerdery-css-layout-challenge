@@ -1,0 +1,14 @@
+@import "../../assets/stylesheets/vars.css";
+
+.section-header-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-main-text {
+    line-height: 1.5em;
+    color: var(--DARK-BG);
+    font-weight: 400;
+    font-size: 2em;
+}
