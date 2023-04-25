@@ -1,5 +1,5 @@
-import HomeScreen from "./home-screen/Home"
-import Sidebar from "./sidebar/sidebar"
+import HomeScreen from "./home-screen"
+import Sidebar from "./sidebar"
 import "./styles.css"
 
 const Dashboard = () => {
