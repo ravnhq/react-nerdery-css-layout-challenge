@@ -1,0 +1,28 @@
+.button{
+    border-radius: 7px;
+    border: none;
+    color: white;
+    background-color: var(--yellow-button);
+}
+.top-2{
+    margin-top: 20px;
+}
+.smallPadding{
+    padding: 4px 4px 5px 20px;
+}
+.normalPadding{
+    padding: 10px 18px;
+}
+.actionButtonIcon{
+    margin: 0px;    
+    margin-left: 23px;
+    width: 21px;
+    height: 21px;
+    border: none;
+    color: white;
+    background-color:var(--yellow-secondary-button);
+    border-radius: 4px;
+}
+.center{
+    text-align: center;
+}

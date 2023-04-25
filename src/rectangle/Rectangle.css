@@ -1,0 +1,14 @@
+.small{
+    height: 21px;
+    width: 74px;
+    border-radius: 5px;
+}
+.large{
+    height: 73px;
+    width: 119px;
+    border-radius: 10px;
+}
+.rectangle{
+    background: linear-gradient(to right, var(--light-orange-gradient), var(--dark-orange-gradient),var(--blue-gradient));
+    
+}
