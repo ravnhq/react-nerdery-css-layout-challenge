@@ -43,5 +43,5 @@
 
 .graph-metric-label span{
   font-size: 12px;
-  color: var(--lightgray);
+  color: var(--darkgray);
 }

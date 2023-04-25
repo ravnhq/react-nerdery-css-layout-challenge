@@ -27,7 +27,7 @@ body,
   font-size: 20px;
   line-height: 23px;
 
-  color:var(--darkblue);
+  color: var(--darkblue);
 }
 
 .layout-container{

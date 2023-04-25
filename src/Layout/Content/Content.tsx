@@ -1,6 +1,7 @@
 import { Table } from './Table/Table'
-import { Box } from './Box/Box'
-import { SingleSquare, Square } from '../Icons/Icons'
+import { Card } from './Card/Card'
+import { SmallCard } from './Card/SmallCard'
+import { Square } from '../Icons/Icons'
 
 import styles from './content.module.css'
 import { colors } from '../constants'
@@ -16,16 +17,16 @@ export const Content = () => {
     <div className={styles['recently-used']}> 
       <div className={styles['section-header']}>
         <h1 className={styles['header']}>Recently used</h1>
-        <label>
-          <SingleSquare />
-          <SingleSquare />
+        <label className='pagination'>
+          <Square color={colors.GRAYVARIANT}/>
+          <Square color={colors.LIGHTGRAY}/>
         </label>
       </div> 
       <div className={styles['box-group']}>
-        <Box name='Project #1' date='14.04.2023' />
-        <Box name='Project #2' date='17.04.2023' />
-        <Box name='Project #3' date='20.04.2023' />
-        <Box name='Project #4' date='16.08.2023' />
+        <Card name='Project #1' date='14.04.2023' />
+        <Card name='Project #2' date='17.04.2023' />
+        <Card name='Project #3' date='20.04.2023' />
+        <Card name='Project #4' date='16.08.2023' />
       </div>
     </div>
 
@@ -43,9 +44,9 @@ export const Content = () => {
         <label>View All</label>
       </div> 
       <div className={styles['box-group']}>
-        <Box name='Landing Page' date='14.04.2023' />
-        <Box name='Illustration Pack' date='17.04.2023' />
-        <Box name='CV Design' date='20.04.2023' />
+        <SmallCard name='Landing Page' date='14.04.2023' />
+        <SmallCard name='Illustration Pack' date='17.04.2023' />
+        <SmallCard name='CV Design' date='20.04.2023' />
       </div>
     </div>
   </section>
