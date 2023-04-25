@@ -1,25 +1,28 @@
 .navigation-bar{
-    display:grid;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
     left: 0px;
     top: 0px;
     background: var(--darkblue);
     grid-area: nav-bar;
+    grid-auto-rows: max-content;
   }
   
-  .navigation-bar  ul{
+  .menu-bar{
     margin-top: 123px;
     max-width: auto;
     padding:0;
     list-style: none;
   }
 
-  .navigation-bar ul li span{
+  .menu-bar li span{
     display: flex;
     padding-left: 25px;
     gap:30px;
   }
   
-  .navigation-bar ul li{
+  .menu-bar li{
     display: flex;
     width: auto;
     height:44px;
@@ -30,19 +33,71 @@
   
     font-size: 14px;
     line-height: 12px;
-    color: var(--inactive);
+    color: var(--darkgray);
   }
 
-  .navigation-bar ul li:hover{
+  .menu-bar li:hover{
     color:white;
     background-color: var(--orange);
     border-left: 7px solid white;
     border-radius: 7px;
   }
 
-  li.selected{
+  .menu-bar li.selected{
     color:black;
     background-color: var(--orange);
     border-left: 7px solid white;
     border-radius: 7px;
   }
+
+  .divider {
+    grid-column: 1 / -1;
+    height: 0;
+    border-bottom: 1px solid var(--darkgray);
+    width: 100%;
+  }
+
+  .check-list-wrapper{
+    display: flex;
+    gap:7px;
+    margin-bottom: 35px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .check-list{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width:80%;
+    padding: 7px;
+    margin-bottom: 15px;
+    border-radius: 9px;
+    background-color: var(--grayvariant);
+    font-size: 14px;
+    line-height: 12px;
+    color: var(--lightgray);
+  }
+
+  .check-list:after {
+    content:'';
+    position: absolute;
+    top: 100%;
+    left: -60%;
+    right: 0;
+    margin: 0 auto;
+    width: 0;
+    height: 0;
+    border-top: solid 10px var(--grayvariant);
+    border-left: solid 10px transparent;
+    border-right: solid 10px transparent;
+}
+
+.check-list input[type="checkbox"]{
+  background-color: var(--grayvariant);
+  width: 15px;
+  height: 15px;
+  border: 1px solid #FFFFFF;
+}
