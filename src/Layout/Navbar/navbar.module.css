@@ -8,9 +8,18 @@
     grid-area: nav-bar;
     grid-auto-rows: max-content;
   }
+
+  .logo{
+    width: 74px;
+    height: 21px;
+    margin-top: 20px;
+    margin-left: 15%;
+    background: linear-gradient(270deg, #689EF8 0%, #FF6860 56.25%, #FF9F00 100%);
+    border-radius: 5px;
+  }
   
   .menu-bar{
-    margin-top: 123px;
+    margin-top: 40px;
     max-width: auto;
     padding:0;
     list-style: none;
@@ -28,7 +37,7 @@
     height:44px;
     align-items: center;
     justify-content: left;
-    margin-bottom:33px;
+    margin-bottom:23px;
     cursor:pointer;
   
     font-size: 14px;
@@ -77,7 +86,7 @@
     border-radius: 9px;
     background-color: var(--grayvariant);
     font-size: 14px;
-    line-height: 12px;
+    line-height: 20px;
     color: var(--lightgray);
   }
 
@@ -93,11 +102,4 @@
     border-top: solid 10px var(--grayvariant);
     border-left: solid 10px transparent;
     border-right: solid 10px transparent;
-}
-
-.check-list input[type="checkbox"]{
-  background-color: var(--grayvariant);
-  width: 15px;
-  height: 15px;
-  border: 1px solid #FFFFFF;
 }
