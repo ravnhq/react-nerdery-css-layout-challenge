@@ -1,5 +1,5 @@
 import { PropsWithChildren } from "react";
-import './index.css'
+import './Layout.module.css'
 
 
 const Layout: React.FunctionComponent<PropsWithChildren> = ({ children }) => (
