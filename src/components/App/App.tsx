@@ -1,13 +1,12 @@
 import { AsideNavBar } from '../AsideNavBar'
+import { Dashboard } from '../Dashboard'
 import { Layout } from '../Layout'
 import './App.module.css'
 
 const App = () => (
   <Layout>
     <AsideNavBar/>
-    <div className="">
-      <h1>Content</h1>
-    </div>
+    <Dashboard />
     <div className="">
       <h1>Graph</h1>
     </div>
