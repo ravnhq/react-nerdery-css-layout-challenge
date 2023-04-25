@@ -11,6 +11,7 @@ const Sidebar = () => {
       <div className="sidebar-footer">
         <SpeechBubbleMenu
           items={["Upload Files", "Upload folder", "New folder", "More"]}
+          classNames="mb-20"
         ></SpeechBubbleMenu>
         <Button>Create New</Button>
       </div>

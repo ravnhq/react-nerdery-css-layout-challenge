@@ -19,6 +19,7 @@ const SpeechBubbleMenu = ({
           <MenuItem name={item} key={idx} gap={7}/> 
         ))}
       </div>
+      <div className="speech-bubble-tail"></div>
     </div>
   );
 };
