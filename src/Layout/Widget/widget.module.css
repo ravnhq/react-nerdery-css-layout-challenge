@@ -1,12 +1,47 @@
 .widget-area{
-    display:grid;
-    left: 194px;
-    top: 0px;
+    display:grid;    
+    margin-right:22px;
+    padding: 0 16px 0 16px;
     background: #F5F6FC;
     grid-area: widget-area;
     grid-template-rows: repeat(1fr,3);
+    grid-auto-rows: max-content;
     grid-template-areas: 
       "widget-profile"
       "widget-graph"
       "widget-ads";
-  }
+}
+
+.divider {
+  grid-column: 1 / -1;
+  height: px;
+  border: 1px solid var(--lightgray);
+  width: 100%;
+}
+
+.storage-graph{
+  display: flex;
+  flex-direction: column;
+  gap:15px;
+}
+
+.storage-graph svg{
+  align-self: center;
+  justify-self: center;
+}
+
+.graph-metric{
+  display: flex;
+  gap:15px;
+  flex-direction: row;
+}
+
+.graph-metric-label{
+  display: flex;
+  flex-direction: column;
+}
+
+.graph-metric-label span{
+  font-size: 12px;
+  color: var(--lightgray);
+}
