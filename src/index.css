@@ -3,4 +3,9 @@
 body {
   margin: 0;
   font-family: Roboto;
+  background-color: #E5E5E5;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
 }
