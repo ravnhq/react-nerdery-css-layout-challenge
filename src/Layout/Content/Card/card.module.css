@@ -1,40 +1,40 @@
-.card{
-    background: #FFFFFF;
-    box-shadow: 0px 4px 16px rgba(58, 58, 58, 0.07);
-    border-radius: 12px;
-    width: 185px;
-    height: auto;
-    padding: 15px;
-  }
-  
-  .card-icons{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .card-title{
-    display:flex;
-    color: var(--darkblue);
-    height: 40px;
-    justify-content: left;
-    align-items: center;
-    font-size: 20px;
-  }
-  
-  .card-date{
-    display:flex;
-    color: var(--darkgray);
-    height: 40px;
-    justify-content: left;
-    font-size: 13px;
-  }
+.card {
+  background: #ffffff;
+  box-shadow: 0px 4px 16px rgba(58, 58, 58, 0.07);
+  border-radius: 12px;
+  width: 185px;
+  height: auto;
+  padding: 15px;
+}
 
-  .card-menu-button {
-    transform: rotate(180deg);
-    writing-mode: vertical-lr;
-    color: var(--darkgray);
-    font-size: 25px;
-    cursor: pointer;
-    text-align: center;
-  }
+.card-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-title {
+  display: flex;
+  color: var(--darkblue);
+  height: 40px;
+  justify-content: left;
+  align-items: center;
+  font-size: 20px;
+}
+
+.card-date {
+  display: flex;
+  color: var(--darkgray);
+  height: 40px;
+  justify-content: left;
+  font-size: 13px;
+}
+
+.card-menu-button {
+  transform: rotate(180deg);
+  writing-mode: vertical-lr;
+  color: var(--darkgray);
+  font-size: 25px;
+  cursor: pointer;
+  text-align: center;
+}

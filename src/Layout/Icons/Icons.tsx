@@ -1,4 +1,4 @@
-export const Square = ({color = '#fff', w = '15' , h = '15'}) => {
+export const Square = ({ color = "#fff", w = "15", h = "15" }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -10,7 +10,7 @@ export const Square = ({color = '#fff', w = '15' , h = '15'}) => {
       <path stroke={color} d="M0.5 0.5H14.5V14.5H0.5z"></path>
     </svg>
   );
-}
+};
 
 export const DSquares = () => {
   return (
@@ -25,57 +25,62 @@ export const DSquares = () => {
       <path fill="#FF9F00" d="M5 0H35V26H5z"></path>
     </svg>
   );
-}
+};
 
-export const Circles = ({radio ='8.5', quantity = 3}) =>{
-  if(quantity===1)
+export const Circles = ({ radio = "8.5", quantity = 3 }) => {
+  if (quantity === 1)
     return (
-          <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="18"
-          height="18"
-          fill="none"
-          viewBox="0 0 18 18"
-        >
-          <circle cx="9" cy="9" r="8.5" fill="#fff" stroke= '#BEC0C8'></circle>
-        </svg>
-  )
-  else if (quantity===2)
-    return (
-          <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="30"
-              height="18"
-              fill="none"
-              viewBox="0 0 30 18"
-          >
-              <circle cx="9" cy="9" r={radio} fill="#fff" stroke='#BEC0C8'></circle>
-              <circle cx="21" cy="9" r={radio} fill="#fff" stroke='#BEC0C8'></circle>
-          </svg>
-          )
-  else{
-    return(
       <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="42"
-      height="18"
-      fill="none"
-      viewBox="0 0 42 18"
-    >
-      <circle cx="9" cy="9" r={radio} fill="#fff" stroke='#4AC29D'></circle>
-      <circle cx="21" cy="9" r={radio} fill="#fff" stroke='#FF6860'></circle>
-      <circle cx="33" cy="9" r={radio} fill="#fff" stroke='#FF9F00'></circle>
-      <path
-        fill="#343951"
-        d="M30.617 8.95h1.586v.683h-1.586v1.797h-.726V9.633h-1.586v-.684h1.586V7.29h.726v1.66zm3.445-.145h.544c.34-.006.609-.095.804-.27.196-.174.293-.41.293-.707 0-.667-.332-1-.996-1-.313 0-.563.09-.75.27-.185.177-.277.412-.277.707h-.723c0-.45.164-.825.492-1.121.33-.3.75-.45 1.258-.45.536 0 .957.142 1.262.426.304.284.457.679.457 1.184 0 .247-.08.487-.242.718a1.438 1.438 0 01-.653.52c.313.099.554.263.723.492.172.23.258.51.258.84 0 .51-.167.915-.5 1.215-.334.3-.767.45-1.301.45-.534 0-.969-.145-1.305-.434-.333-.29-.5-.671-.5-1.145h.727c0 .3.097.54.293.719.195.18.457.27.785.27.349 0 .616-.092.8-.274.186-.182.278-.444.278-.785 0-.331-.102-.585-.305-.762-.203-.177-.496-.268-.879-.273h-.542v-.59z"
-      ></path>
-    </svg>
-    )
+        xmlns="http://www.w3.org/2000/svg"
+        width="18"
+        height="18"
+        fill="none"
+        viewBox="0 0 18 18"
+      >
+        <circle cx="9" cy="9" r="8.5" fill="#fff" stroke="#BEC0C8"></circle>
+      </svg>
+    );
+  else if (quantity === 2)
+    return (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="30"
+        height="18"
+        fill="none"
+        viewBox="0 0 30 18"
+      >
+        <circle cx="9" cy="9" r={radio} fill="#fff" stroke="#BEC0C8"></circle>
+        <circle cx="21" cy="9" r={radio} fill="#fff" stroke="#BEC0C8"></circle>
+      </svg>
+    );
+  else {
+    return (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="42"
+        height="18"
+        fill="none"
+        viewBox="0 0 42 18"
+      >
+        <circle cx="9" cy="9" r={radio} fill="#fff" stroke="#4AC29D"></circle>
+        <circle cx="21" cy="9" r={radio} fill="#fff" stroke="#FF6860"></circle>
+        <circle cx="33" cy="9" r={radio} fill="#fff" stroke="#FF9F00"></circle>
+        <path
+          fill="#343951"
+          d="M30.617 8.95h1.586v.683h-1.586v1.797h-.726V9.633h-1.586v-.684h1.586V7.29h.726v1.66zm3.445-.145h.544c.34-.006.609-.095.804-.27.196-.174.293-.41.293-.707 0-.667-.332-1-.996-1-.313 0-.563.09-.75.27-.185.177-.277.412-.277.707h-.723c0-.45.164-.825.492-1.121.33-.3.75-.45 1.258-.45.536 0 .957.142 1.262.426.304.284.457.679.457 1.184 0 .247-.08.487-.242.718a1.438 1.438 0 01-.653.52c.313.099.554.263.723.492.172.23.258.51.258.84 0 .51-.167.915-.5 1.215-.334.3-.767.45-1.301.45-.534 0-.969-.145-1.305-.434-.333-.29-.5-.671-.5-1.145h.727c0 .3.097.54.293.719.195.18.457.27.785.27.349 0 .616-.092.8-.274.186-.182.278-.444.278-.785 0-.331-.102-.585-.305-.762-.203-.177-.496-.268-.879-.273h-.542v-.59z"
+        ></path>
+      </svg>
+    );
   }
-}
+};
 
-export const SingleSquare = ({color = '#fff' , w = '28' , h = '28', rounded = false}) =>{
-  if(rounded)
+export const SingleSquare = ({
+  color = "#fff",
+  w = "28",
+  h = "28",
+  rounded = false,
+}) => {
+  if (rounded)
     return (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -86,20 +91,20 @@ export const SingleSquare = ({color = '#fff' , w = '28' , h = '28', rounded = fa
       >
         <rect width={w} height={h} fill={color} rx="8"></rect>
       </svg>
-    )
+    );
   else
     return (
       <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width={w}
-      height={h}
-      fill="none"
-      viewBox={`0 0 ${w} ${h}`}
+        xmlns="http://www.w3.org/2000/svg"
+        width={w}
+        height={h}
+        fill="none"
+        viewBox={`0 0 ${w} ${h}`}
       >
-      <rect width={w} height={h} fill={color} ></rect>
+        <rect width={w} height={h} fill={color}></rect>
       </svg>
     );
-}
+};
 
 export const Graph = () => {
   return (
@@ -161,4 +166,4 @@ export const Graph = () => {
       ></path>
     </svg>
   );
-}
+};

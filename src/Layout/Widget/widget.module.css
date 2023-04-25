@@ -1,15 +1,15 @@
-.widget-area{
-    display:grid;    
-    margin-right:22px;
-    padding: 0 16px 0 16px;
-    background: #F5F6FC;
-    grid-area: widget-area;
-    grid-template-rows: repeat(1fr,3);
-    grid-auto-rows: max-content;
-    grid-template-areas: 
-      "widget-profile"
-      "widget-graph"
-      "widget-ads";
+.widget-area {
+  display: grid;
+  margin-right: 22px;
+  padding: 0 16px 0 16px;
+  background: #f5f6fc;
+  grid-area: widget-area;
+  grid-template-rows: repeat(1fr, 3);
+  grid-auto-rows: max-content;
+  grid-template-areas:
+    "widget-profile"
+    "widget-graph"
+    "widget-ads";
 }
 
 .divider {
@@ -19,29 +19,29 @@
   width: 100%;
 }
 
-.storage-graph{
+.storage-graph {
   display: flex;
   flex-direction: column;
-  gap:15px;
+  gap: 15px;
 }
 
-.storage-graph svg{
+.storage-graph svg {
   align-self: center;
   justify-self: center;
 }
 
-.graph-metric{
+.graph-metric {
   display: flex;
-  gap:15px;
+  gap: 15px;
   flex-direction: row;
 }
 
-.graph-metric-label{
+.graph-metric-label {
   display: flex;
   flex-direction: column;
 }
 
-.graph-metric-label span{
+.graph-metric-label span {
   font-size: 12px;
   color: var(--darkgray);
 }

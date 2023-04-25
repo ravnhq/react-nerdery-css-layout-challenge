@@ -1,27 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 :root {
   --darkblue: #343951;
-  --darkgray: #858A9D;
+  --darkgray: #858a9d;
   --orange: #ff9f00;
-  --lightgray: #E0E7F1;
-  --navyblue: #689FF8;
-  --green: #4AC29D;
-  --red: #FF6860;
-  --gray:#F5F6FC;
-  --grayvariant:#464C61;
-  --lightorange:#FFB233;
+  --lightgray: #e0e7f1;
+  --navyblue: #689ff8;
+  --green: #4ac29d;
+  --red: #ff6860;
+  --gray: #f5f6fc;
+  --grayvariant: #464c61;
+  --lightorange: #ffb233;
 }
 
 body,
-#root{
-  margin:0;
-  font-family: 'Roboto', sans-serif;
+#root {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
   background-color: white;
 }
 
-.title{
-  font-family: 'Roboto';
+.title {
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -30,16 +30,16 @@ body,
   color: var(--darkblue);
 }
 
-.layout-container{
-  display:grid;
-  height:100vh;
-  width:100%;
+.layout-container {
+  display: grid;
+  height: 100vh;
+  width: 100%;
   grid-template-columns: 1fr 3fr 1fr;
   grid-template-areas: "nav-bar content-area widget-area";
 }
 
-.header{
-  color: var(--darkblue)
+.header {
+  color: var(--darkblue);
 }
 
 .divider {
