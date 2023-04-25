@@ -1,25 +1,8 @@
 @import '../../../assets/stylesheets/vars.css';
 
-.border-gray {
-    border: 1px solid #bec0c8;
-}
-
-.border-green {
-    border: 1px solid var(--CUSTOM-GREEN);
-}
-
-.border-yellow {
-    border: 1px solid var(--CUSTOM-YELLOW);
-}
-
-.border-red {
-    border: 1px solid var(--CUSTOM-RED);
-}
-
 .circle {
     height: 1.25rem;
     width: 1.25rem;
-    border: 1px solid black;
     border-radius: 50%;
     position: absolute;
 }
@@ -38,4 +21,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.border-gray {
+    border: 1.5px solid #bec0c8;
+}
+
+.border-green {
+    border: 1.5px solid var(--CUSTOM-GREEN);
+}
+
+.border-yellow {
+    border: 1.5px solid var(--CUSTOM-YELLOW);
+}
+
+.border-red {
+    border: 1.5px solid var(--CUSTOM-RED);
 }
