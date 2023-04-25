@@ -1,4 +1,4 @@
-declare module "*.module.css"
+declare module '*.module.css';
 
 interface listItem {
     id?: number;
@@ -10,4 +10,11 @@ interface projectItem {
     name: string;
     date: string;
     circles: number;
+}
+
+interface tableItem {
+    id: number;
+    projectName: string;
+    members: number;
+    lastModified: string;
 }

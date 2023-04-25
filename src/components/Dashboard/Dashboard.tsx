@@ -1,6 +1,7 @@
 import { ProjectCard } from '../Cards/ProjectCard';
 import { EmptySquare } from '../EmptySquare';
 import { SectionHeader } from '../SectionHeader';
+import { Table } from '../Table';
 import styles from './Dashboard.module.css';
 
 const projectData: projectItem[] = [
@@ -21,6 +22,33 @@ const projectData: projectItem[] = [
         name: 'Client Documents',
         date: '4.03.2020',
         circles: 3,
+    },
+];
+
+const tableData: tableItem[] = [
+    {
+        id: 1,
+        projectName: 'Travel Landing Page',
+        members: 5,
+        lastModified: 'Mar 8, 2020',
+    },
+    {
+        id: 2,
+        projectName: 'True Photos',
+        members: 12,
+        lastModified: 'Mar 8, 2020',
+    },
+    {
+        id: 3,
+        projectName: 'Dashboard Structure',
+        members: 10,
+        lastModified: 'Mar 9, 2020',
+    },
+    {
+        id: 4,
+        projectName: 'Character Illustration',
+        members: 3,
+        lastModified: 'Mar 10, 2020',
     },
 ];
 
@@ -52,11 +80,7 @@ const Dashboard: React.FunctionComponent = () => (
             <SectionHeader title="Recent Files">
                 <a href="/">View All</a>
             </SectionHeader>
-        </section>
-        <section>
-            <SectionHeader title="Share with me">
-                <a href="/">View All</a>
-            </SectionHeader>
+            <Table data={tableData} />
         </section>
     </div>
 );
