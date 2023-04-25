@@ -1,5 +1,5 @@
 import { ReactNode } from 'react';
-import { Ellipsis } from '../../Icons/Ellipsis';
+import { EllipsisVertical } from '../../Icons/EllipsisVertical';
 import BaseCard from '../BaseCard/BaseCard';
 import styles from './ProjectCard.module.css';
 import { Circle } from '../../Icons/Circle';
@@ -40,7 +40,7 @@ const ProjectCard: React.FunctionComponent<Props> = ({
                     <img src="/src/assets/svg/stackedRectangles.svg" alt="" />
                     {renderCircles()}
                 </span>
-                <Ellipsis />
+                <EllipsisVertical />
             </div>
             <h4 className={styles['card-title']}>{name}</h4>
             <p className={styles['date-text']}>{`Created: ${date}`}</p>

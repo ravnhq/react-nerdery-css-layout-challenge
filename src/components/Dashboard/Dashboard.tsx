@@ -48,6 +48,16 @@ const Dashboard: React.FunctionComponent = () => (
                 ))}
             </div>
         </section>
+        <section>
+            <SectionHeader title="Recent Files">
+                <a href="/">View All</a>
+            </SectionHeader>
+        </section>
+        <section>
+            <SectionHeader title="Share with me">
+                <a href="/">View All</a>
+            </SectionHeader>
+        </section>
     </div>
 );
 
