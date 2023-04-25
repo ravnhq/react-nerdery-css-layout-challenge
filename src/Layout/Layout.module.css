@@ -2,10 +2,15 @@
 
 :root {
   --darkblue: #343951;
-  --inactive: #858A9D;
-  --active: #ffffff;
+  --darkgray: #858A9D;
   --orange: #ff9f00;
-  --gray: #bcbeca;
+  --lightgray: #E0E7F1;
+  --navyblue: #689FF8;
+  --green: #4AC29D;
+  --red: #FF6860;
+  --gray:#F5F6FC;
+  --grayvariant:#464C61;
+  --lightorange:#FFB233;
 }
 
 body,
@@ -35,4 +40,11 @@ body,
 
 .header{
   color: var(--darkblue)
+}
+
+.divider {
+  grid-column: 1 / -1;
+  height: px;
+  border: 1px solid var(--lightgray);
+  width: 100%;
 }
