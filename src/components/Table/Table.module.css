@@ -5,6 +5,10 @@
     margin-top: 0.9rem;
 }
 
+.table-container p {
+    text-align: left;
+}
+
 .row {
     display: flex;
     text-align: left;
@@ -33,10 +37,10 @@
     width: 24px;
     height: 24px;
     background-color: var(--CUSTOM-YELLOW);
+    border-radius: 5px;
 }
 
 .square ~ p {
-    width: max-content;
     color: var(--DARK-BG);
     white-space: nowrap;
 }
