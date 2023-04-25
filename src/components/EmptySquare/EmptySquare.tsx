@@ -1,13 +1,13 @@
-import styles from './EmptySquare.module.css'
+import styles from './EmptySquare.module.css';
 
-type Border = "border-white" | "border-gray" | "border-black"
+type Border = 'border-white' | 'border-gray' | 'border-black';
 
 interface Props {
-    borderColor?: Border
+    borderColor?: Border;
 }
 
-const EmptySquare: React.FunctionComponent<Props> = ({ borderColor = "border-white" }) => (
-    <div className={`${styles["square-icon"]} ${styles[borderColor]}`} />
-)
+const EmptySquare: React.FunctionComponent<Props> = ({
+    borderColor = 'border-white',
+}) => <div className={`${styles['square-icon']} ${styles[borderColor]}`} />;
 
-export default EmptySquare
+export default EmptySquare;
