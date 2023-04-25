@@ -1,0 +1,39 @@
+@import url('/src/assets/stylesheets/vars.css');
+
+.circle-container {
+    position: relative;
+    height: 1.5rem;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-subcontainer {
+    display: inline-flex;
+    align-items: end;
+}
+
+img:first-child {
+    margin-right: 1rem;
+}
+
+.card-title {
+    margin-top: 1.8rem;
+    margin-bottom: 0.625rem;
+    font-size: 1em;
+    font-weight: 400;
+}
+
+.date-text {
+    margin: 0;
+    width: 100%;
+    color: #858a9d;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 9px;
+    letter-spacing: 0.05em;
+    margin-bottom: 1.25rem;
+}

@@ -1,4 +1,4 @@
-@import "../../assets/stylesheets/vars.css";
+@import '../../assets/stylesheets/vars.css';
 
 .dashboard-main {
     background-color: var(--LIGHT-BG);
@@ -8,7 +8,7 @@
     align-items: center;
 }
 
-[type="text"] {
+[type='text'] {
     border: none;
     outline: none;
     width: 100%;
@@ -34,7 +34,8 @@ section {
 }
 
 .card-container {
-    display: grid; 
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 0.875rem;
+    margin-top: 1.4rem;
 }
