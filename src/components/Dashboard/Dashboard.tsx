@@ -1,6 +1,7 @@
+import { cardItem, tableItem } from '../../types/types';
 import { CompactCard } from '../Cards/CompactCard';
 import { ProjectCard } from '../Cards/ProjectCard';
-import { EmptySquare } from '../EmptySquare';
+import { EmptySquare } from '../Icons/EmptySquare';
 import { SectionHeader } from '../SectionHeader';
 import { Table } from '../Table';
 import styles from './Dashboard.module.css';

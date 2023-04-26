@@ -1,20 +1,29 @@
+import { ReactNode } from 'react';
+
 declare module '*.module.css';
 
-interface listItem {
+export interface listItem {
     id?: number;
     name: string;
 }
 
-interface cardItem {
+export interface cardItem {
     id: number;
     name: string;
     date: string;
     circles: number;
 }
 
-interface tableItem {
+export interface tableItem {
     id: number;
     projectName: string;
     members: number;
     lastModified: string;
+}
+
+export interface storageItem {
+    name: string;
+    fileAmmount: number;
+    fileSize: number;
+    icon: ReactNode;
 }
