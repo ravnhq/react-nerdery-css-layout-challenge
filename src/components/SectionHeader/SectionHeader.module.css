@@ -1,4 +1,4 @@
-@import "../../assets/stylesheets/vars.css";
+@import '../../assets/stylesheets/vars.css';
 
 .section-header-container {
     width: 100%;
@@ -10,5 +10,5 @@
     line-height: 1.5em;
     color: var(--DARK-BG);
     font-weight: 400;
-    font-size: 2em;
+    font-size: 1.35em;
 }
