@@ -1,4 +1,4 @@
-import { EmptySquare } from '../EmptySquare';
+import { EmptySquare } from '../Icons/EmptySquare';
 import styles from './NavBarItem.module.css';
 
 interface Props extends listItem {

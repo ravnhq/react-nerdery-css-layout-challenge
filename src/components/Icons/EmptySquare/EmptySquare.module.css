@@ -1,6 +1,6 @@
-@import "../../assets/stylesheets/vars.css";
+@import '/src/assets/stylesheets/vars.css';
 
-.square-icon{
+.square-icon {
     width: 0.9rem;
     height: 0.9rem;
     align-self: center;
@@ -11,7 +11,7 @@
     border: 1px solid white;
 }
 .border-gray {
-    border: 1px solid #9D9FAF;
+    border: 1px solid #9d9faf;
 }
 .border-black {
     border: 1px solid var(--DARK-BG);
