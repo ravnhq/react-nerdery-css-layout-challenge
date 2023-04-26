@@ -1,0 +1,23 @@
+@import '/src/assets/stylesheets/vars.css';
+
+.squircle {
+    width: 1.75rem;
+    height: 1.75rem;
+    border-radius: 8px;
+}
+
+.bg-green {
+    background-color: var(--CUSTOM-GREEN);
+}
+
+.bg-blue {
+    background-color: var(--CUSTOM-BLUE);
+}
+
+.bg-gray {
+    background-color: var(--CUSTOM-GRAY);
+}
+
+.bg-yellow {
+    background-color: var(--CUSTOM-YELLOW);
+}
