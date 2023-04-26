@@ -82,7 +82,9 @@ export const Navbar = () => {
               <label htmlFor="more">More</label>
             </div>
           </div>
-          <button className={primitives["primary-button"]}>Create New</button>
+          <button className={primitives["primary-button"]}>
+            Create New <span className={primitives["tag-lightorange"]}>+</span>
+          </button>
         </div>
       </div>
     </>

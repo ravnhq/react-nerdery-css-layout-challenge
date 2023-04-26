@@ -6,6 +6,10 @@ import { Square } from "../Icons/Icons";
 import styles from "./content.module.css";
 import { colors } from "../constants";
 
+import { TABLE_DATA, TABLE_HEADERS } from "../../test-data";
+import { RECENT_PROJECTS } from "../../test-data";
+import { SHARED_PROJECTS } from "../../test-data";
+
 export const Content = () => {
   return (
     <section className={styles["content"]}>
@@ -23,16 +27,15 @@ export const Content = () => {
       <div className={styles["recently-used"]}>
         <div className={styles["section-header"]}>
           <h1 className={styles["header"]}>Recently used</h1>
-          <label className="pagination">
+          <div className={styles["pagination"]}>
             <Square color={colors.GRAYVARIANT} />
-            <Square color={colors.LIGHTGRAY} />
-          </label>
+            <Square color={colors.DARKGRAY} />
+          </div>
         </div>
         <div className={styles["box-group"]}>
-          <Card name="Project #1" date="14.04.2023" />
-          <Card name="Project #2" date="17.04.2023" />
-          <Card name="Project #3" date="20.04.2023" />
-          <Card name="Project #4" date="16.08.2023" />
+          {RECENT_PROJECTS.map((item) => {
+            return <Card key={item.id} data={item} />;
+          })}
         </div>
       </div>
 
@@ -41,7 +44,7 @@ export const Content = () => {
           <h1 className={styles["header"]}>Recent files</h1>
           <label>View All</label>
         </div>
-        <Table />
+        <Table data={TABLE_DATA} headers={TABLE_HEADERS} />
       </div>
 
       <div className={styles["share-w-me"]}>
@@ -50,9 +53,9 @@ export const Content = () => {
           <label>View All</label>
         </div>
         <div className={styles["box-group"]}>
-          <SmallCard name="Landing Page" date="14.04.2023" />
-          <SmallCard name="Illustration Pack" date="17.04.2023" />
-          <SmallCard name="CV Design" date="20.04.2023" />
+          {SHARED_PROJECTS.map((item) => {
+            return <SmallCard key={item.id} data={item} />;
+          })}
         </div>
       </div>
     </section>

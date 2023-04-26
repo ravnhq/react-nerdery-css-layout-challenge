@@ -43,3 +43,12 @@ td:last-child {
   font-size: 14px;
   color: var(--darkgray);
 }
+
+.row-action {
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.row-data {
+  color: var(--darkgray);
+}

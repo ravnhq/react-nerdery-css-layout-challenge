@@ -33,8 +33,31 @@
   height: 15px;
   margin-right: 10px;
   border: 1px solid #ccc;
+  cursor: pointer;
 }
 
 .checkbox:checked + label::before {
   background-color: var(--lightorange);
+}
+
+.content-area {
+  display: flex;
+  padding: 20px;
+  row-gap: 15px;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 18px;
+}
+
+.content-area span {
+  color: var(--darkgray);
+  font-size: 12px;
+}
+
+.tag-lightorange {
+  background: var(--lightorange);
+  border-radius: 4px;
+  padding: 7px;
 }
