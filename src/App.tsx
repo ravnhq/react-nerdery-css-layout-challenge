@@ -1,13 +1,18 @@
 import "./App.css";
+import Table from "./Table/Table";
 import Actions from "./actions/Actions";
 import Button from "./button/Button";
-import CardLargetrue from "./card/CardLargetrue";
-import CardSmalltrue from "./card/CardSmalltrue";
 import SectionHeader from "./header/SectionHeader";
 import Icon from "./icon/Icon";
 import RectangleSmall from "./rectangle/RectangleSmall";
-import RoundedSquare from "./roundedSquare/RoundedSquare";
 import SideBar from "./sideBar/SideBar";
+
+const tableData = [
+  { name: "Travel Landing Page", members: 5, date: "Mar 8, 2020", type: 0 },
+  { name: "True Photos", members: 12, date: "Mar 8, 2020", type: 1 },
+  { name: "Dashboard Structure", members: 10, date: "Mar 9, 2020", type: 2 },
+  { name: "Character Illustration", members: 3, date: "Mar 10, 2020", type: 0 },
+];
 
 function App() {
   return (
@@ -27,6 +32,7 @@ function App() {
           <Icon color="light-gray" /> <input type="text" placeholder="Search" />
         </div>
         <SectionHeader multipleActions={true}></SectionHeader>
+        <Table data={tableData}></Table>
       </div>
       <div className="cell">
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
