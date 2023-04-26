@@ -2,6 +2,7 @@
 
 .summary-main {
     background-color: var(--LIGHT-BG);
+    position: relative;
 }
 
 .summary-header {
@@ -60,4 +61,8 @@
     letter-spacing: 0.05em;
     font-size: 0.75em;
     margin-top: 1.75rem;
+}
+
+.cards-container {
+    margin: 37px 0;
 }

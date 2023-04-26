@@ -22,8 +22,9 @@ export interface tableItem {
 }
 
 export interface storageItem {
+    id: number;
     name: string;
     fileAmmount: number;
     fileSize: number;
-    icon: ReactNode;
+    icon: JSX.Element;
 }
