@@ -8,7 +8,7 @@
 }
 
 .storage-card-container:not(:first-child) {
-    border-top: 1px solid #c4c4c4;
+    border-top: 1.5px solid #e0e7f1;
 }
 
 .storage-ammount {
@@ -19,4 +19,10 @@
     border-radius: 4px;
     color: var(--DARK-BG);
     font-weight: 500;
+}
+
+.storage-subtitle {
+    color: var(--CUSTOM-LIGHT-GRAY);
+    font-weight: 400;
+    font-size: 12px;
 }
