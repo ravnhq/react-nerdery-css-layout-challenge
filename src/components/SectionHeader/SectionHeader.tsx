@@ -1,5 +1,6 @@
 import { PropsWithChildren } from 'react';
 import styles from './SectionHeader.module.css';
+import { Title } from '../Title';
 
 interface Props extends PropsWithChildren {
     title: string;
@@ -7,7 +8,7 @@ interface Props extends PropsWithChildren {
 
 const SectionHeader: React.FunctionComponent<Props> = ({ title, children }) => (
     <div className={styles['section-header-container']}>
-        <h2 className={styles['section-main-text']}>{title}</h2>
+        <Title name={title} />
         <>{children}</>
     </div>
 );

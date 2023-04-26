@@ -5,10 +5,3 @@
     display: flex;
     justify-content: space-between;
 }
-
-.section-main-text {
-    line-height: 1.5em;
-    color: var(--DARK-BG);
-    font-weight: 400;
-    font-size: 1.35em;
-}

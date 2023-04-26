@@ -3,3 +3,61 @@
 .summary-main {
     background-color: var(--LIGHT-BG);
 }
+
+.summary-header {
+    border-bottom: 1px solid #e0e7f1;
+    padding-left: 2.1rem;
+    padding-right: 2.1rem;
+    padding-bottom: 0.9rem;
+    padding-top: 0.9rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.square-container div:first-child {
+    margin-right: 0.8rem;
+}
+
+.circle {
+    width: 1.9rem;
+    height: 1.9rem;
+    background-color: #c4c4c4;
+    border-radius: 50%;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile > p {
+    width: fit-content;
+    margin-right: 0.7rem;
+}
+
+.storage-resume-section {
+    padding: 1.1rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.storage-resume-section h2 {
+    margin-bottom: 2rem;
+    align-self: self-start;
+}
+
+.storage-resume-section svg {
+    transform: scale(1.15);
+}
+
+.space-remaining-text {
+    width: fit-content;
+    white-space: nowrap;
+    color: #858a9d;
+    line-height: 9px;
+    letter-spacing: 0.05em;
+    font-size: 0.75em;
+    margin-top: 1.75rem;
+}
