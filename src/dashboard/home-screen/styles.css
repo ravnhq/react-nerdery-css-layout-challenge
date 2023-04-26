@@ -4,10 +4,6 @@
   grid-template-rows: 1fr;
 }
 
-.content{
-  border: 1px solid red;
-}
-
 
 .details {
   border: 3px solid blue;
