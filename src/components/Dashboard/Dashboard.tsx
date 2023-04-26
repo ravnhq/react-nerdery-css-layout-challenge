@@ -1,10 +1,11 @@
+import { CompactCard } from '../Cards/CompactCard';
 import { ProjectCard } from '../Cards/ProjectCard';
 import { EmptySquare } from '../EmptySquare';
 import { SectionHeader } from '../SectionHeader';
 import { Table } from '../Table';
 import styles from './Dashboard.module.css';
 
-const projectData: projectItem[] = [
+const projectData: cardItem[] = [
     {
         id: 1,
         name: 'App Project',
@@ -52,6 +53,12 @@ const tableData: tableItem[] = [
     },
 ];
 
+const sharedData: cardItem[] = [
+    { id: 1, name: 'Landing Page', circles: 2, date: '20.02.2020' },
+    { id: 2, name: 'Illustration Pack', circles: 3, date: '20.02.2020' },
+    { id: 3, name: 'CV Page', circles: 2, date: '20.02.2020' },
+];
+
 const Dashboard: React.FunctionComponent = () => (
     <div className={styles['dashboard-main']}>
         <div className={styles['search-wrapper']}>
@@ -81,6 +88,21 @@ const Dashboard: React.FunctionComponent = () => (
                 <a href="/">View All</a>
             </SectionHeader>
             <Table data={tableData} />
+        </section>
+        <section>
+            <SectionHeader title="Shared with me">
+                <a href="/">View All</a>
+            </SectionHeader>
+            <div className={styles['card-container']}>
+                {sharedData.map((shared) => (
+                    <CompactCard
+                        key={shared.id}
+                        name={shared.name}
+                        date={shared.date}
+                        circles={shared.circles}
+                    />
+                ))}
+            </div>
         </section>
     </div>
 );
