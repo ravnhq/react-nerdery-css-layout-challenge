@@ -6,6 +6,7 @@ import CardSmalltrue from "./card/CardSmalltrue";
 import SectionHeader from "./header/SectionHeader";
 import Icon from "./icon/Icon";
 import RectangleSmall from "./rectangle/RectangleSmall";
+import RoundedSquare from "./roundedSquare/RoundedSquare";
 import SideBar from "./sideBar/SideBar";
 
 function App() {

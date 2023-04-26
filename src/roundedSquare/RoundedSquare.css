@@ -1,0 +1,26 @@
+
+.smallSquare{
+    width: 21px;
+    height: 21px;
+    border-radius: 5px;
+}
+.largeSquare{
+    width: 28px;
+    height: 28px;
+    border-radius: 8px;
+}
+.orange{
+    background-color: var(--yellow-button);
+}
+.green{
+    background-color: var(--green-bg);
+}
+.red{
+    background-color: var(--dark-orange-gradient);
+}
+.blue{
+    background-color: var(--light-blue-bg);
+}
+.default{
+    background-color: var(--gray-placeholder-fc);
+}
