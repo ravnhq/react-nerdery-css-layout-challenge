@@ -52,6 +52,8 @@ interface FlexProps extends CustomBoxModel {
     | "baseline"
     | "initial"
     | "inherit";
+
+  gap?: number
 }
 
 const Flex = ({
@@ -63,13 +65,14 @@ const Flex = ({
   alignContent,
   alignItems,
   justifyItems,
+  gap,
   ...props
 }: FlexProps) => {
   return (
     <div
       className={`flex ${className ?? ""}`}
       style={{ ...style, flexDirection: type, 
-        justifyContent, alignContent, alignItems, justifyItems,  ...props.boxProperties}}
+        justifyContent, alignContent, alignItems, justifyItems, gap, ...props.boxProperties}}
     >
       {children}
     </div>
