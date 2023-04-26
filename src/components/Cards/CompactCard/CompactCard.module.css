@@ -1,0 +1,42 @@
+@import '/src/assets/stylesheets/vars.css';
+
+.circle-container {
+    position: relative;
+    height: 1.5rem;
+    margin-right: 4rem;
+}
+
+.card-header {
+    position: relative;
+}
+
+.square {
+    width: 1.9rem;
+    height: 1.6rem;
+    background-color: var(--CUSTOM-YELLOW);
+}
+
+.card-title {
+    margin-top: 1.8rem;
+    margin-bottom: 0.625rem;
+    font-size: 1em;
+    font-weight: 400;
+}
+
+.card-description {
+    margin: 0;
+    width: 100%;
+    color: #858a9d;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 9px;
+    letter-spacing: 0.05em;
+    margin-bottom: 1.25rem;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}

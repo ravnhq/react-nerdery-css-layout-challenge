@@ -5,7 +5,7 @@ interface listItem {
     name: string;
 }
 
-interface projectItem {
+interface cardItem {
     id: number;
     name: string;
     date: string;
