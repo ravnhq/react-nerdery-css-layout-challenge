@@ -7,39 +7,24 @@
 .absolute{
     position: absolute;
 }
-.card{
-    background-color: white;
-    border-radius: 12px;
+
+.fs-8{
+    font-size: 8px;
 }
-.smallCard{
-    width: 157px;
-    height: 79px;
+.fs-12{
+    font-size: 12px;
 }
-.largeCard{
-    width: 159px;
-    height: 133px;
+.mt-30{
+    margin-top: 30px;
 }
-.circles{
-    width: 18px;
-    height: 18px;
+.mt-10{
+    margin-top:10px
 }
-.circle{
-    outline: 1px solid;
-    width: 18px;
-    height: 18px;
-    border-radius: 18px;
-    background-color: white;
+.mt-6{
+    margin-top: 6px;
 }
-.circle:not(:first-child){
-    left: 12px;
-}
-.square{
-    width: 30px;
-    height: 26px;
-    background-color: var(--yellow-button);
-}
-.secondarySquare{
- background-color: var(--yellow-pale-bg);
+.mt-2{
+    margin-top: 2px;
 }
 
 .left-5{
@@ -48,116 +33,69 @@
 .-top-5{
     top: -5px;
 }
-
-.shortDistance{
-    left: 26px;
+.-top-10{
+    top:-10px;
 }
-.longDistance{
-    left: 50px
+.right-0{
+    right:0;
 }
-.smallPadding{
-    padding-top: 13px;
-    padding-left: 11px;
-    padding-bottom: 5px;
+.gap-25{
+    gap: 25px;
 }
-.largePadding{
-    padding-top: 20px;
-    padding-left: 17px;
-    padding-bottom: 16px;
+.gap-50{
+    gap:50px
 }
-.cardBody{
-    font-size: 12px;
-    margin-top: 6px;
-}
-.cardFooter{
-    font-size: 8px;
-    margin-top: 2px;
-}
-.margin-30{
-    margin-top: 30px;
-}
-.margin-10{
-    margin-top: 10px;
+.alignCenter{
+    align-items: center;
 }
 
-/* .card{
+.card{
     background-color: white;
     border-radius: 12px;
-}
-
-.smallPadding{
-    padding-top: 13px;
-    padding-left: 11px;
-    padding-bottom: 5px;
-}
-.largePadding{
-    padding-top: 20px;
-    padding-left: 17px;
-    padding-bottom: 16px;
-}
-
-.smallCard{
-    width: 157px;
-    height: 79px;
 }
 .largeCard{
     width: 159px;
     height: 133px;
+    padding-top: 20px;
+    padding-left: 17px;
+    padding-bottom: 16px;
+    padding-right: 13px;
+}
+.smallCard{
+    width: 157px;
+    height: 79px;
+    padding-top: 13px;
+    padding-left: 11px;
+    padding-bottom: 5px;
 }
 
-.square{
-    width: 30px;
-    height: 26px;
-    background-color: var(--yellow-button);
-} */
-
-/* .cardHeader{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 6px;
-    position: relative;
-}
-.cardBody{
-    font-size: 12px;
-    margin-bottom: 2px;
-}
-.cardFooter{
-    color: var(--gray-fc);
-    font-size: 8px;
-    letter-spacing: 0.5px;
-}
-
-.circles{
-    display: flex;
-    position: relative;
-    left: -36px;
-}  
-.squares{
-    position: relative;
-}
-.squareSecondary{
-background-color: var(--yellow-pale-bg);
-}
-.float{
-    position: absolute;
-    left: -5px;
-    top: 5px;
-}
-.minustop-5{
-    top: -5px;
-}
-.left-5{
-    left: 5px;
-}
 .circle{
     outline: 1px solid;
     width: 18px;
     height: 18px;
     border-radius: 18px;
     background-color: white;
+    outline: 1px solid var(--gray-pale-outline);
 }
+
 .circle:not(:first-child){
-    position: relative;
-    left: -6px;
-} */
+    left: 12px;
+}
+
+.square{
+    width: 30px;
+    height: 26px;
+    background-color: var(--yellow-button);
+}
+.squareYellow{
+    background-color: var(--yellow-pale-bg);
+}
+
+.cardBody{
+    color: var(--sidebar-bg);
+}
+.cardFooter{
+    color: var(--gray-fc);
+}
+
+
