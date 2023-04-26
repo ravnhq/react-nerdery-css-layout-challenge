@@ -1,10 +1,10 @@
-import ContentSection from "./content-section";
+import FileSummary from "./file-summary";
 import "./styles.css";
 
 const HomeScreen = () => {
   return (
     <div className="home-screen">
-      <ContentSection />
+      <FileSummary />
       <div className="details"></div>
     </div>
   );
