@@ -13,40 +13,6 @@
     "widget-ads";
 }
 
-.divider {
-  grid-column: 1 / -1;
-  height: px;
-  border: 1px solid var(--lightgray);
-  width: 100%;
-}
-
-.storage-graph {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-.storage-graph svg {
-  align-self: center;
-  justify-self: center;
-}
-
-.graph-metric {
-  display: flex;
-  gap: 15px;
-  flex-direction: row;
-}
-
-.graph-metric-label {
-  display: flex;
-  flex-direction: column;
-}
-
-.graph-metric-label span {
-  font-size: 12px;
-  color: var(--darkgray);
-}
-
 .profile {
   display: flex;
   justify-content: space-between;

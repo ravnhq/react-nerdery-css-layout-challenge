@@ -8,8 +8,8 @@ interface TableProps {
 
 export const Table = (props: TableProps) => {
   const [first, second, third] = props.headers;
-  const rowActionHandler = () => {
-    alert("A row was clicked");
+  const rowActionHandler = (id: number) => () => {
+    alert(`The row with id: ${id} was clicked`);
   };
 
   return (
@@ -41,7 +41,7 @@ export const Table = (props: TableProps) => {
 
               <td>
                 <span
-                  onClick={rowActionHandler}
+                  onClick={rowActionHandler(item.id)}
                   className={styles["row-action"]}
                 >
                   ...

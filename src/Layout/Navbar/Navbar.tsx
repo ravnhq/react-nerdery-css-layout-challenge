@@ -82,8 +82,11 @@ export const Navbar = () => {
               <label htmlFor="more">More</label>
             </div>
           </div>
-          <button className={primitives["primary-button"]}>
-            Create New <span className={primitives["tag-lightorange"]}>+</span>
+          <button
+            className={`${primitives["primary-button"]} ${styles["checklist-button-width"]}`}
+          >
+            <label>Create New </label>
+            <span className={primitives["tag-lightorange"]}>+</span>
           </button>
         </div>
       </div>

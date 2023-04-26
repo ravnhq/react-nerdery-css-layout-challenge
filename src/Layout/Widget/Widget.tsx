@@ -1,7 +1,10 @@
-import { Graph, SingleSquare, Square } from "../Icons/Icons";
+import { Square } from "../Icons/Icons";
+import { GraphWidget } from "./GraphWidget/GraphWidget";
 import styles from "./widget.module.css";
 import primitives from "../Primitives/primitives.module.css";
 import { colors } from "../constants";
+
+import { GRAPH_DATA } from "../../test-data";
 
 export const Widget = () => {
   return (
@@ -16,49 +19,9 @@ export const Widget = () => {
           <div className={styles["picture"]}></div>
         </div>
       </div>
-      <div className={styles["divider"]} />
-
-      <div className={styles["storage-graph"]}>
-        <div className={styles["section-header"]}>
-          <h1 className={styles["header"]}>Storage</h1>
-        </div>
-        <Graph />
-        <div className={styles["graph-metric"]}>
-          <SingleSquare color={colors.ORANGE} rounded={true} />
-          <label className={styles["graph-metric-label"]}>
-            Documents <span>720 files</span>
-          </label>
-          <button className={primitives["secondary-button"]}>200GB</button>
-        </div>
-        <div className={styles["divider"]} />
-
-        <div className={styles["graph-metric"]}>
-          <SingleSquare color={colors.NAVYBLUE} rounded={true} />
-          <label className={styles["graph-metric-label"]}>
-            Documents <span>720 files</span>
-          </label>
-          <button className={primitives["secondary-button"]}>125GB</button>
-        </div>
-        <div className={styles["divider"]} />
-
-        <div className={styles["graph-metric"]}>
-          <SingleSquare color={colors.GREEN} rounded={true} />
-          <label className={styles["graph-metric-label"]}>
-            Documents <span>720 files</span>
-          </label>
-          <button className={primitives["secondary-button"]}>75GB</button>
-        </div>
-        <div className={styles["divider"]} />
-
-        <div className={styles["graph-metric"]}>
-          <SingleSquare color={colors.DARKGRAY} rounded={true} />
-          <label className={styles["graph-metric-label"]}>
-            Documents <span>720 files</span>
-          </label>
-          <button className={primitives["secondary-button"]}>50GB</button>
-        </div>
-      </div>
-      <div className={styles["divider"]} />
+      <div className={primitives["divider"]} />
+      <GraphWidget data={GRAPH_DATA} />
+      <div className={primitives["divider"]} />
 
       <div className={primitives["content-area"]}>
         <div className={styles["ad-img"]}></div>

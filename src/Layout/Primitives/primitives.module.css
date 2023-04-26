@@ -61,3 +61,10 @@
   border-radius: 4px;
   padding: 7px;
 }
+
+.divider {
+  grid-column: 1 / -1;
+  height: px;
+  border: 1px solid var(--lightgray);
+  width: 100%;
+}

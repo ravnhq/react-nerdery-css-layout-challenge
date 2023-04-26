@@ -91,3 +91,38 @@ export const SHARED_PROJECTS: Array<Project> = [
     comments: 2,
   },
 ];
+
+export const GRAPH_DATA: Array<GraphData> = [
+  {
+    id: 27,
+    name: "Documents",
+    files: 720,
+    size: 200,
+    size_type: "GB",
+    color: colors.ORANGE,
+  },
+  {
+    id: 7,
+    name: "Pictures",
+    files: 20,
+    size: 10,
+    size_type: "GB",
+    color: colors.NAVYBLUE,
+  },
+  {
+    id: 17,
+    name: "JSON Files",
+    files: 120,
+    size: 2105,
+    size_type: "GB",
+    color: colors.GREEN,
+  },
+  {
+    id: 1,
+    name: "JSX Files",
+    files: 5,
+    size: 1,
+    size_type: "GB",
+    color: colors.DARKBLUE,
+  },
+];
