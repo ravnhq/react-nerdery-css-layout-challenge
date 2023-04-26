@@ -77,11 +77,12 @@
     background-color: white;
     outline: 1px solid var(--gray-pale-outline);
 }
-
-.circle:not(:first-child){
-    left: 12px;
-}
-
+.cardCounter{
+    font-size: 8px;
+    top: 4px;
+    right: -20px;
+    z-index: 0;
+} 
 .square{
     width: 30px;
     height: 26px;
@@ -99,3 +100,16 @@
 }
 
 
+/*  */
+.orange{
+    outline: 1px solid var(--yellow-button);
+}
+.green{
+    outline:1px solid var(--green-bg);
+}
+.red{
+    outline:1px solid var(--dark-orange-gradient);
+}
+.blue{
+    outline:1px solid var(--light-blue-bg);
+}

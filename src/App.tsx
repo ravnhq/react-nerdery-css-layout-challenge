@@ -2,6 +2,8 @@ import "./App.css";
 import Table from "./Table/Table";
 import Actions from "./actions/Actions";
 import Button from "./button/Button";
+import CardLarge from "./card/CardLarge";
+import CardSmall from "./card/CardSmall";
 import SectionHeader from "./header/SectionHeader";
 import Icon from "./icon/Icon";
 import RectangleSmall from "./rectangle/RectangleSmall";
@@ -14,6 +16,10 @@ const tableData = [
   { name: "Character Illustration", members: 3, date: "Mar 10, 2020", type: 0 },
 ];
 
+const Users = [
+  { avatar: "", id: 1, type: 1 },
+  { avatar: "", id: 1, type: 2 },
+];
 function App() {
   return (
     <div className="layout">
@@ -31,8 +37,14 @@ function App() {
         <div className="searchBar">
           <Icon color="light-gray" /> <input type="text" placeholder="Search" />
         </div>
-        <SectionHeader multipleActions={true}></SectionHeader>
-        <Table data={tableData}></Table>
+        {/* <SectionHeader multipleActions={true}></SectionHeader>
+        <Table data={tableData}></Table> */}
+        <CardLarge numberUsers={Users} footer="footer">
+          Card
+        </CardLarge>
+        <CardSmall footer="footer" numberUsers={Users}>
+          Small
+        </CardSmall>
       </div>
       <div className="cell">
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
