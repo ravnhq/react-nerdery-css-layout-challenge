@@ -1,0 +1,46 @@
+.widget-area {
+  display: grid;
+  margin-right: 22px;
+  padding: 10px 16px 0 16px;
+  background: #f5f6fc;
+  gap: 10px;
+  grid-area: widget-area;
+  grid-template-rows: repeat(1fr, 3);
+  grid-auto-rows: max-content;
+  grid-template-areas:
+    "widget-profile"
+    "widget-graph"
+    "widget-ads";
+}
+
+.profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 7px;
+  height: 70px;
+}
+
+.picture {
+  width: 40px;
+  height: 40px;
+  background-color: var(--darkgray);
+  border-radius: 50%;
+}
+
+.pagination {
+  display: flex;
+  gap: 7px;
+}
+
+.ad-img {
+  width: 140px;
+  height: 95px;
+  background: linear-gradient(
+    270.15deg,
+    #689ff8 0.15%,
+    #ff6860 54.7%,
+    #ff9f00 99.9%
+  );
+  border-radius: 11px;
+}

@@ -1,0 +1,87 @@
+.content {
+  display: grid;
+  margin: 0 22px 0 22px;
+  padding: 0 16px 0 16px;
+  background: var(--gray);
+  grid-area: content-area;
+  grid-auto-rows: max-content;
+  row-gap: 38px;
+  align-items: start;
+  grid-template-areas:
+    "content-search-bar"
+    "content-recently-used"
+    "content-recent-files"
+    "content-share-w-me";
+}
+
+.search-bar {
+  display: flex;
+  height: 49px;
+  width: 100%;
+  margin-top: 25px;
+  align-items: center;
+  gap: 10px;
+  background: white;
+  border-radius: 5px;
+  grid-area: content-search-bar;
+}
+
+.search-bar-input {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  background-color: transparent;
+  border: 0px solid;
+}
+
+.search-bar svg,
+.search-bar-input {
+  margin-left: 20px;
+  color: var(--darkgray);
+}
+
+.box-group {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 14px;
+  grid-auto-rows: max-content;
+}
+
+.recently-used {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: auto;
+  grid-area: content-recently-used;
+}
+
+.recent-files {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: auto;
+  grid-area: content-recent-files;
+}
+
+.share-w-me {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: auto;
+  grid-area: content-share-w-me;
+}
+
+.section-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pagination {
+  display: flex;
+  gap: 7px;
+}
