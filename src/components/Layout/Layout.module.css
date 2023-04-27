@@ -1,0 +1,6 @@
+main {
+    display: grid;
+    height: 100vh;
+    column-gap: 1.375rem;
+    grid-template-columns: 0.75fr 3fr 1fr;
+}

@@ -1,0 +1,69 @@
+@import url('../../assets/stylesheets/vars.css');
+.table-container {
+    width: 100%;
+    height: fit-content;
+    margin-top: 0.9rem;
+}
+
+.table-container p {
+    text-align: left;
+}
+
+.row {
+    display: flex;
+    text-align: left;
+    line-height: 14px;
+    color: #858a9d;
+    font-weight: 400;
+}
+
+.table-header :first-child {
+    width: 46%;
+}
+
+.table-header :nth-child(2) {
+    width: 23%;
+}
+
+.table-header :nth-child(3) {
+    width: 21%;
+}
+
+.table-header :last-child(4) {
+    width: 10%;
+}
+
+.square {
+    width: 24px;
+    height: 24px;
+    background-color: var(--CUSTOM-YELLOW);
+    border-radius: 5px;
+}
+
+.square ~ p {
+    color: var(--DARK-BG);
+    white-space: nowrap;
+}
+
+.project-name-container {
+    width: 40%;
+    margin-left: 1.1rem;
+    display: flex;
+    align-items: center;
+}
+
+.table-content {
+    background-color: white;
+    border-radius: 7px;
+    padding: 10px 13px;
+    margin-top: 1.2rem;
+    align-items: center;
+}
+
+.table-content :nth-child(2) {
+    width: 24%;
+}
+
+.table-content :nth-child(3) {
+    width: 22%;
+}

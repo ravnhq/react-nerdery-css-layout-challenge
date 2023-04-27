@@ -1,0 +1,92 @@
+@import url('../../assets/stylesheets/vars.css');
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-main {
+    position: relative;
+    background-color: var(--DARK-BG);
+}
+
+#app-logo {
+    margin-left: 2rem;
+    margin-top: 2.25rem;
+    width: 74px;
+    height: 21px;
+    border-radius: 5px;
+    background: linear-gradient(
+        270.15deg,
+        #689ff8 0.15%,
+        #ff6860 54.7%,
+        #ff9f00 99.9%
+    );
+}
+
+.navigation-items {
+    border-bottom: 1px solid #464c61;
+    padding-bottom: 1.3rem;
+    margin-top: 3.2rem;
+}
+
+.navigation-items li {
+    list-style-type: square;
+}
+
+#navbar-footer {
+    padding: 0 1.75rem;
+    background: transparent;
+    color: white;
+    position: absolute;
+    width: 75%;
+    padding-bottom: 1.7rem;
+    bottom: 1rem;
+}
+
+.dialog-items {
+    background-color: #464c61;
+    padding: 1.2rem 0.9rem;
+    border-radius: 9px;
+}
+
+.down-arrow {
+    width: 0;
+    height: 0;
+    border-left: 0.9rem solid var(--DARK-BG);
+    border-right: 0.9rem solid var(--DARK-BG);
+    border-top: 0.9rem solid #464c61;
+    position: absolute;
+    left: 2.5rem;
+}
+
+.dialog-box {
+    position: relative;
+}
+
+.create-btn {
+    cursor: pointer;
+    border: none;
+    margin-top: 1.25rem;
+    color: white;
+    background-color: var(--CUSTOM-YELLOW);
+    border-radius: 7px;
+    padding: 1.06rem 1.15rem;
+    line-height: 12px;
+    width: 100%;
+    text-align: left;
+    position: relative;
+}
+
+.plus-sub-btn {
+    border-radius: 4px;
+    background: #ffb233;
+    padding: 0.5rem;
+    font-weight: bold;
+    align-self: flex-end;
+    position: absolute;
+    right: 0.25rem;
+    top: 50%;
+    transform: translateY(-50%);
+}

@@ -1,0 +1,6 @@
+.square-box {
+    width: 1rem;
+    height: 1rem;
+    background-color: #c4c4c4;
+    display: inline-block;
+}

@@ -1,0 +1,40 @@
+@import '../../../assets/stylesheets/vars.css';
+
+.circle {
+    height: 1.25rem;
+    width: 1.25rem;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.circle:nth-child(2) {
+    background: white;
+    left: 0.875rem;
+    z-index: 1;
+}
+
+.circle:nth-child(3) {
+    background: white;
+    left: 1.7rem;
+    z-index: 2;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.border-gray {
+    border: 1.5px solid #bec0c8;
+}
+
+.border-green {
+    border: 1.5px solid var(--CUSTOM-GREEN);
+}
+
+.border-yellow {
+    border: 1.5px solid var(--CUSTOM-YELLOW);
+}
+
+.border-red {
+    border: 1.5px solid var(--CUSTOM-RED);
+}

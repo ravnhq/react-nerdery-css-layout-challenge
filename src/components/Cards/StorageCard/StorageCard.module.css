@@ -1,0 +1,28 @@
+@import '/src/assets/stylesheets/vars.css';
+
+.storage-card-container {
+    display: flex;
+    padding-bottom: 9px;
+    padding-top: 9px;
+    align-self: self-end;
+}
+
+.storage-card-container:not(:first-child) {
+    border-top: 1.5px solid #e0e7f1;
+}
+
+.storage-ammount {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    color: var(--DARK-BG);
+    font-weight: 500;
+}
+
+.storage-subtitle {
+    color: var(--CUSTOM-LIGHT-GRAY);
+    font-weight: 400;
+    font-size: 12px;
+}
