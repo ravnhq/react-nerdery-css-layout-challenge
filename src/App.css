@@ -64,4 +64,16 @@
     color:var(--gray-placeholder-fc);
 }
 
+.cell:last-child{
+    padding: 25px 25px;
+}
 
+.spaceBetween{
+    justify-content: space-between;
+}
+.gap-13{
+    gap:13px;
+}
+.gap-1{
+    gap:5px;
+}
