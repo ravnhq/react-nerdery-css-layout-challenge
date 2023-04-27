@@ -2,8 +2,7 @@ import "./App.css";
 import Table from "./Table/Table";
 import Actions from "./actions/Actions";
 import Button from "./button/Button";
-import CardLarge from "./card/CardLarge";
-import CardSmall from "./card/CardSmall";
+import Cards from "./card/Cards";
 import Icon from "./icon/Icon";
 import RectangleSmall from "./rectangle/RectangleSmall";
 import Section from "./section/Section";
@@ -91,25 +90,13 @@ function App() {
           <Icon color="light-gray" /> <input type="text" placeholder="Search" />
         </div>
         <Section title="Recently Used" action={true}>
-          <div style={{ display: "flex", gap: "14px", marginTop: "23px" }}>
-            {files.map((file) => (
-              <CardLarge footer={file.date} numberUsers={file.users}>
-                {file.name}
-              </CardLarge>
-            ))}
-          </div>
+          <Cards data={files} shared={false}></Cards>
         </Section>
         <Section title="Recent Files" action={false}>
           <Table data={tableData}></Table>
         </Section>
         <Section title="Share with me" action={false}>
-          <div style={{ display: "flex", gap: "13px" }}>
-            {sharedFiles.map((file) => (
-              <CardSmall footer={file.date} numberUsers={file.users}>
-                {file.name}
-              </CardSmall>
-            ))}
-          </div>
+          <Cards data={sharedFiles} shared={true}></Cards>
         </Section>
       </div>
       <div className="cell">

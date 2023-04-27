@@ -2,7 +2,6 @@ import React, { FC } from "react";
 import RoundedSquare from "../roundedSquare/RoundedSquare";
 import { ReactComponent as EllipsisHorizontal } from "../assets/ellipsisHorizontal.svg";
 import { TableCell as TableCellProps } from "./types";
-import "./Table.css";
 
 const TableCell: FC<TableCellProps> = ({ name, members, date, type }) => {
   const colors = ["orange", "green", "red", "blue"];

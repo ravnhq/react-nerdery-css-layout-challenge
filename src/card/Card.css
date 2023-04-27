@@ -113,3 +113,15 @@
 .blue{
     outline:1px solid var(--light-blue-bg);
 }
+
+.cards{
+    display: flex; 
+    gap: 14px   
+}
+
+.mt-16{
+    margin-top: 16px;
+}
+.mt-23{
+    margin-top: 23px;
+}

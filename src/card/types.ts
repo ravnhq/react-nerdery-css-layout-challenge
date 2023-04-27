@@ -9,3 +9,8 @@ export interface Card {
   footer: string;
   numberUsers: User[];
 }
+
+export interface Cards {
+  data: { name: string; date: string; users: User[] }[];
+  shared: boolean;
+}
