@@ -2,10 +2,11 @@ import React, { FC } from "react";
 import TableHeader from "./TableHeader";
 import TableBody from "./TableBody";
 import { Table as TableProps } from "./types";
+import "./Table.css";
 
 const Table: FC<TableProps> = ({ data }) => {
   return (
-    <table style={{ width: "100%", borderSpacing: "0 16px" }}>
+    <table className="table">
       <TableHeader />
       <TableBody data={data} />
     </table>

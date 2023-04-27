@@ -99,9 +99,9 @@ function App() {
             ))}
           </div>
         </Section>
-        {/* <Section title="Recent Files" action={false}>
+        <Section title="Recent Files" action={false}>
           <Table data={tableData}></Table>
-        </Section> */}
+        </Section>
         <Section title="Share with me" action={false}>
           <div style={{ display: "flex", gap: "13px" }}>
             {sharedFiles.map((file) => (

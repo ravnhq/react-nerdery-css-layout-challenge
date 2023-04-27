@@ -4,9 +4,9 @@ const TableHeader = () => {
   return (
     <thead>
       <tr>
-        <th style={{ textAlign: "left" }}>Name</th>
-        <th style={{ textAlign: "left" }}>Members</th>
-        <th style={{ textAlign: "left" }}>Last Modified</th>
+        <th>Name</th>
+        <th>Members</th>
+        <th>Last Modified</th>
       </tr>
     </thead>
   );
