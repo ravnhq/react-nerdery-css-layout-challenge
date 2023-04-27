@@ -2,6 +2,7 @@ import { ReactNode } from 'react';
 import { Circle } from '../../Icons/Circle';
 import BaseCard from '../BaseCard/BaseCard';
 import styles from './CompactCard.module.css';
+import { cardItem } from '../../../types/types';
 
 type Props = Omit<cardItem, 'id'>;
 

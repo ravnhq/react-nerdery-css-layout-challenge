@@ -1,5 +1,3 @@
-import { ReactNode } from 'react';
-
 declare module '*.module.css';
 
 export interface listItem {

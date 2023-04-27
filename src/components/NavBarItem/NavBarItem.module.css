@@ -15,7 +15,7 @@
     opacity: 1;
 }
 
-.navigation-item:hover{
+.navigation-item:hover {
     opacity: 1;
     transition: all ease-in-out 300ms;
 }

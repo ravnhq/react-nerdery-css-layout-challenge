@@ -1,3 +1,4 @@
+import { tableItem } from '../../types/types';
 import { EllipsisHorizontal } from '../Icons/EllipsisHorizontal';
 import styles from './Table.module.css';
 
