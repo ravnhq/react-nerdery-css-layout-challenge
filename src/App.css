@@ -1,33 +1,67 @@
+:root{
+    --sidebar-bg: #343951;
+    --gray-full: #C4C4C4;
+    --cell-bg: #F5F6FC;
+    --gray-pale-outline: #BEC0C8;
+    --light-orange-gradient: #FF9F00;
+    --dark-orange-gradient: #FF6860;
+    --blue-gradient: #689EF8;
+    --gray-fc: #858A9D;
+    --dark-gray-bg: #464C61;
+    --yellow-button: #FF9F00;
+    --yellow-pale-bg: #FFD999;
+    --yellow-secondary-button: #FFB233;
+    --gray-placeholder-fc: #BCBECA;
+    --dark-blue-bg: #343951;
+    --light-gray-bg: #9D9FAF;
+    --green-bg: #4AC29D;
+    --light-blue-bg: #689FF8;
+
+}
+
 .layout{
     display: grid;
-    gap: 1rem;
-    grid-template-columns: 20% 50% 28% ;   
+    grid-template-columns: 172px 1fr 252px;
+    gap: 20px;
 }
+
 .cell{
     /* outline: 1px solid blue; */
     height: 100vh;
-    background-color: #F5F6FC;
+    background-color: var(--cell-bg);
 }
 
 .cell:first-child{
-    background-color: #343951;
+    background-color: var(--sidebar-bg);
+    color: var(--gray-fc);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 10px;
 }
 
-.layout .cell:last-child{
-    justify-self: end;
+.sideBarActions{
+    padding: 27px;
 }
+.cell:nth-child(2){
+    padding: 25px 19px 25px 16px;
+}
+/* ***   *** */
 
-
-/* .small{
-    height: 21px;
-    width: 74px;
+.searchBar{
+    background-color: white;
     border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    padding: 7px 12px;
 }
-.large{
-    height: 73px;
-    width: 119px;
-    border-radius: 10px;
+.searchBar input{
+    border: none;
+    font-size: 10px;
 }
-.rectangle{
-    background: linear-gradient(to right, #FF9F00, #FF6860,#689EF8);
-} */
+.searchBar ::placeholder{
+    color:var(--gray-placeholder-fc);
+}
+
+

@@ -1,0 +1,115 @@
+.flex{
+    display: flex;
+}
+.relative{
+    position: relative;
+}
+.absolute{
+    position: absolute;
+}
+
+.fs-8{
+    font-size: 8px;
+}
+.fs-12{
+    font-size: 12px;
+}
+.mt-30{
+    margin-top: 30px;
+}
+.mt-10{
+    margin-top:10px
+}
+.mt-6{
+    margin-top: 6px;
+}
+.mt-2{
+    margin-top: 2px;
+}
+
+.left-5{
+    left: 5px;
+}
+.-top-5{
+    top: -5px;
+}
+.-top-10{
+    top:-10px;
+}
+.right-0{
+    right:0;
+}
+.gap-25{
+    gap: 25px;
+}
+.gap-50{
+    gap:50px
+}
+.alignCenter{
+    align-items: center;
+}
+
+.card{
+    background-color: white;
+    border-radius: 12px;
+}
+.largeCard{
+    width: 159px;
+    height: 133px;
+    padding-top: 20px;
+    padding-left: 17px;
+    padding-bottom: 16px;
+    padding-right: 13px;
+}
+.smallCard{
+    width: 157px;
+    height: 79px;
+    padding-top: 13px;
+    padding-left: 11px;
+    padding-bottom: 5px;
+}
+
+.circle{
+    outline: 1px solid;
+    width: 18px;
+    height: 18px;
+    border-radius: 18px;
+    background-color: white;
+    outline: 1px solid var(--gray-pale-outline);
+}
+.cardCounter{
+    font-size: 8px;
+    top: 4px;
+    right: -20px;
+    z-index: 0;
+} 
+.square{
+    width: 30px;
+    height: 26px;
+    background-color: var(--yellow-button);
+}
+.squareYellow{
+    background-color: var(--yellow-pale-bg);
+}
+
+.cardBody{
+    color: var(--sidebar-bg);
+}
+.cardFooter{
+    color: var(--gray-fc);
+}
+
+
+/*  */
+.orange{
+    outline: 1px solid var(--yellow-button);
+}
+.green{
+    outline:1px solid var(--green-bg);
+}
+.red{
+    outline:1px solid var(--dark-orange-gradient);
+}
+.blue{
+    outline:1px solid var(--light-blue-bg);
+}
