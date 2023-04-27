@@ -1,4 +1,5 @@
 import { storageItem } from '../../types/types';
+import BaseCard from '../Cards/BaseCard/BaseCard';
 import { StorageCard } from '../Cards/StorageCard';
 import { PieChart } from '../Icons/PieChart';
 import { RoundedSquare } from '../Icons/RoundedSquare';
@@ -67,6 +68,14 @@ const Summary: React.FunctionComponent = () => (
                 ))}
             </div>
         </div>
+        <BaseCard padding="padding-lg" className={styles['bottom-card']}>
+            <div className={styles['gradient-box']} />
+            <p className={styles['bottom-card-title']}>Buy more space now!</p>
+            <p className={styles['bottom-card-subtitle']}>
+                Upgrade to cloud premium
+            </p>
+            <button className={styles['upgrade-btn']}>Upgrade Account!</button>
+        </BaseCard>
     </div>
 );
 

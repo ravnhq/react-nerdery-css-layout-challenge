@@ -5,10 +5,17 @@ type paddingSize = 'padding-sm' | 'padding-md' | 'padding-lg';
 
 interface Props extends PropsWithChildren {
     padding: paddingSize;
+    className?: string;
 }
 
-const BaseCard: React.FunctionComponent<Props> = ({ padding, children }) => (
-    <div className={`${styles['card']} ${styles[padding]}`}>{children}</div>
+const BaseCard: React.FunctionComponent<Props> = ({
+    padding,
+    children,
+    className,
+}) => (
+    <div className={`${styles['card']} ${styles[padding]} ${className}`}>
+        {children}
+    </div>
 );
 
 export default BaseCard;

@@ -49,10 +49,6 @@
     align-self: self-start;
 }
 
-.storage-resume-section svg {
-    transform: scale(1.15);
-}
-
 .space-remaining-text {
     width: fit-content;
     white-space: nowrap;
@@ -65,4 +61,53 @@
 
 .cards-container {
     margin: 37px 0;
+}
+
+.bottom-card {
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 12rem;
+}
+
+.gradient-box {
+    background: linear-gradient(
+        270.15deg,
+        #689ff8 0.15%,
+        #ff6860 54.7%,
+        #ff9f00 99.9%
+    );
+    width: 100%;
+    height: 4rem;
+    border-radius: 11px;
+    margin-bottom: 1.4rem;
+}
+
+.bottom-card-title {
+    color: var(--DARK-BG);
+    white-space: nowrap;
+}
+
+.bottom-card-subtitle {
+    color: var(--CUSTOM-LIGHT-GRAY);
+    letter-spacing: 0.05em;
+    line-height: 9px;
+    font-size: 13px;
+    white-space: nowrap;
+    transform: translateX(-10px);
+}
+
+.upgrade-btn {
+    cursor: pointer;
+    border: none;
+    margin-top: 1.25rem;
+    color: white;
+    background-color: var(--CUSTOM-YELLOW);
+    border-radius: 7px;
+    padding: 1.06rem 1.15rem;
+    line-height: 12px;
+    width: 100%;
+    text-align: center;
+    position: relative;
 }
