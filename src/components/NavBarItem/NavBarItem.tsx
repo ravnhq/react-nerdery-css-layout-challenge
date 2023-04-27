@@ -1,3 +1,4 @@
+import { listItem } from '../../types/types';
 import { EmptySquare } from '../Icons/EmptySquare';
 import styles from './NavBarItem.module.css';
 
