@@ -1,5 +1,5 @@
 import "./style.css";
-import { ReactComponent as EllipsisIcon } from "../../../assets/triple-dots.svg";
+import { ReactComponent as VerticalEllipsisIcon } from "../../../assets/vertical=ellipsis-icon.svg";
 import { CustomBoxModel } from "../../types/box-model-properties";
 import Flex from "../flex";
 import { ReactNode } from "react";
@@ -14,7 +14,7 @@ interface CardProps extends CustomBoxModel{
 const Card = ({ details, boxProperties, header, body, contentSeparator }: CardProps) => {
   return <div className="card" style={{...boxProperties}}>
     <div className="card-actions">
-      {details && <EllipsisIcon/> }
+      {details && <VerticalEllipsisIcon/> }
     </div>
     <Flex type="column" gap={contentSeparator}>
       {header}
