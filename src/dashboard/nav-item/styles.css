@@ -21,11 +21,11 @@
   height: 15px;
   margin-left: 32px;
 
-  outline: 1px solid #858a9d;
+  border: 1px solid #858a9d;
 }
 
 .nav-item.active .icon {
-  outline: 1px solid #ffffff;
+  border: 1px solid #ffffff;
 }
 
 .nav-item .nav-item-name {

@@ -32,7 +32,7 @@
 }
 
 .text-input:focus {
-  outline: none;
+  border: none;
 }
 
 .text-input::placeholder{
