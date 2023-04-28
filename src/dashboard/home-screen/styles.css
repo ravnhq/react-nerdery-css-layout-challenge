@@ -8,3 +8,20 @@
 .details {
   border: 3px solid blue;
 }
+.file-card-filename {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  /* identical to box height */
+
+  color: #343951;
+}
+
+.file-card-created-at {
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 9px;
+  letter-spacing: 0.05em;
+
+  color: #858a9d;
+}

@@ -4,13 +4,12 @@ import Flex from "../../../shared/ui/flex";
 import RectanglesOverlappedIcon from "../rectangles-overlapped-icon";
 import UsersSharedWith from "../users-shared-with";
 
+
 const RecentlyUsedFileSectionCard = ({
   filename,
   createdAt,
   usersSharedWith,
 }: FileCardProperties) => {
-
-
   const recentlyUsedFileCardHeader = (
     <Flex
       type="row"
@@ -18,9 +17,7 @@ const RecentlyUsedFileSectionCard = ({
       gap={31}
       alignItems="center"
     >
-      <div className="recently-used-icon-group">
-        <RectanglesOverlappedIcon />
-      </div>
+      <RectanglesOverlappedIcon />
       <div className="users-shared">
         <UsersSharedWith users={usersSharedWith} />
       </div>
@@ -29,8 +26,8 @@ const RecentlyUsedFileSectionCard = ({
 
   const recentlyUsedFileCardBody = (
     <Flex type="column" boxProperties={{ margin: "0px 7px 11px" }} gap={10}>
-      <div className="recently-used-filename">{filename}</div>
-      <div className="recently-used-created-at">Created: {createdAt}</div>
+      <div className="file-card-filename">{filename}</div>
+      <div className="file-card-created-at">Created: {createdAt}</div>
     </Flex>
   );
 
