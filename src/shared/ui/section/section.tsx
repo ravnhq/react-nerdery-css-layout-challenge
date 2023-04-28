@@ -3,8 +3,8 @@ import Flex from '../flex'
 import './style.css'
 
 interface SectionProps extends CustomBoxModel{
-  sectionHeader: React.ReactElement,
-  sectionBody: React.ReactElement,
+  sectionHeader: React.ReactNode,
+  sectionBody: React.ReactNode,
   contentSeparator?: number
 }
 
