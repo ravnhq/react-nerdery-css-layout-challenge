@@ -7,10 +7,10 @@ import UsersSharedWith from "../users-shared-with";
 
 
 const ShareWithMeCard = ({filename, createdAt, usersSharedWith} : FileCardProperties) => {
-  const recentlyUsedFileCardHeader = (
+  const shareWithMeHeader = (
     <Flex
       type="row"
-      boxProperties={{ margin: "8px 6px" }}
+      boxProperties={{ margin: "8px 6px 0px" }}
       gap={31}
       alignItems="center"
     >
@@ -21,8 +21,8 @@ const ShareWithMeCard = ({filename, createdAt, usersSharedWith} : FileCardProper
     </Flex>
   );
 
-  const recentlyUsedFileCardBody = (
-    <Flex type="column" boxProperties={{ margin: "0px 7px 11px" }} gap={10}>
+  const shareWithMeBody = (
+    <Flex type="column" boxProperties={{ margin: "0px 6px 0px" }} gap={2}>
       <div className="file-card-filename">{filename}</div>
       <div className="file-card-created-at">Created: {createdAt}</div>
     </Flex>
@@ -30,8 +30,8 @@ const ShareWithMeCard = ({filename, createdAt, usersSharedWith} : FileCardProper
 
   return (
     <Card
-      header={recentlyUsedFileCardHeader}
-      body={recentlyUsedFileCardBody}
+      header={shareWithMeHeader}
+      body={shareWithMeBody}
       contentSeparator={6}
     />
   );
