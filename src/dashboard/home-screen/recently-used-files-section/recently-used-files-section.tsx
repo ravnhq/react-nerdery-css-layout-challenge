@@ -29,7 +29,7 @@ const RecentlyUsedFilesSection = () => {
 
 
   const recentlyUsedSectionContent = (
-    <Flex type="row" gap={14}>
+    <Flex gap={14}>
       <RecentlyUsedFileSectionCard filename="App Project" createdAt="20.02.2020" usersSharedWith={users}/>
       <RecentlyUsedFileSectionCard filename="App Project" createdAt="20.02.2020" usersSharedWith={users}/>
       <RecentlyUsedFileSectionCard filename="App Project" createdAt="20.02.2020" usersSharedWith={users}/>
