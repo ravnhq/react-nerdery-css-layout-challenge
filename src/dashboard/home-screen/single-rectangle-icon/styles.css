@@ -1,0 +1,13 @@
+.rectangles-overlapped {
+  position: relative;
+}
+
+.square-1 {
+  position: relative;
+}
+
+.square-2 {
+  position: absolute;
+  bottom: 4px;
+  left: 4px;
+}
