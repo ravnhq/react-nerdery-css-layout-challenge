@@ -6,7 +6,7 @@ import Flex from "../../../shared/ui/flex";
 import "./styles.css";
 import RecentlyUsedFileSectionCard from "../recently-used-file-card";
 
-const RecentlyUsedSection = () => {
+const RecentlyUsedFilesSection = () => {
   const recentlyUsedSectionHeader = (
     <SectionHeader title="Recently Used" append={<ContentSlickDots />} />
   );
@@ -45,4 +45,4 @@ const RecentlyUsedSection = () => {
   );
 };
 
-export default RecentlyUsedSection;
+export default RecentlyUsedFilesSection;
