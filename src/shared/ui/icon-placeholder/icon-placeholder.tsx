@@ -9,6 +9,7 @@ interface IconPlaceholderProps extends CustomBoxModel {
   filled?: boolean;
   width?: number;
   height?: number;
+  children?: React.ReactNode;
 }
 
 // TODO: Convert to a general icon with color changes and use it in NavItem, MenuItem and TextInput and anywhere else
@@ -19,19 +20,22 @@ const IconPlaceHolder = ({
   style,
   filled,
   width,
-  height
+  height,
+  children,
 }: IconPlaceholderProps) => {
   return (
     <div
-      className={`icon ${className ?? ''}`}
+      className={`icon ${className ?? ""}`}
       style={{
         ...style,
-        outline: `1px solid ${color}`,
+        border: `1px solid ${color}`,
         backgroundColor: `${filled ? color : "transparent"}`,
-        height: `${height ?? size }`,
-        width: `${width ?? size}`
+        height: `${size ?? height}px`,
+        width: `${size ?? width}px`,
       }}
-    ></div>
+    >
+      {children}
+    </div>
   );
 };
 
