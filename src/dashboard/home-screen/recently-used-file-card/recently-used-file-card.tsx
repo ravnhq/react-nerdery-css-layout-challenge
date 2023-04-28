@@ -12,7 +12,6 @@ const RecentlyUsedFileSectionCard = ({
 }: FileCardProperties) => {
   const recentlyUsedFileCardHeader = (
     <Flex
-      type="row"
       boxProperties={{ margin: "20px 7px" }}
       gap={31}
       alignItems="center"

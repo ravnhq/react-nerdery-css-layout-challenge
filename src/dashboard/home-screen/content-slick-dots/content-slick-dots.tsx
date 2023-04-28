@@ -4,7 +4,7 @@ import "./styles.css";
 
 const ContentSlickDots = () => {
   return (
-    <Flex type="row" gap={10}>
+    <Flex gap={10}>
       <IconPlaceHolder color="#343951" />
       <IconPlaceHolder color="#9D9FAF" />
     </Flex>

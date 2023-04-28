@@ -5,7 +5,7 @@ interface FlexProps extends CustomBoxModel {
   children?: React.ReactNode | React.ReactNode[];
   className?: string;
   style?: React.CSSProperties;
-  type: "row" | "column";
+  type?: "row" | "column";
   justifyContent?:
     | "flex-start"
     | "flex-end"
@@ -71,7 +71,7 @@ const Flex = ({
   return (
     <div
       className={`flex ${className ?? ""}`}
-      style={{ ...style, flexDirection: type, 
+      style={{ ...style, flexDirection: `${type?? 'row'}`, 
         justifyContent, alignContent, alignItems, justifyItems, gap, ...props.boxProperties}}
     >
       {children}

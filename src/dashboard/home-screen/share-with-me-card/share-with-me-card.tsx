@@ -9,7 +9,6 @@ import UsersSharedWith from "../users-shared-with";
 const ShareWithMeCard = ({filename, createdAt, usersSharedWith} : FileCardProperties) => {
   const shareWithMeHeader = (
     <Flex
-      type="row"
       boxProperties={{ margin: "8px 6px 0px" }}
       gap={31}
       alignItems="center"

@@ -28,7 +28,7 @@ const ShareWithMeSection = () => {
   ];
 
   const recentlyUsedSectionContent = (
-    <Flex type="row" gap={14}>
+    <Flex gap={14}>
       <ShareWithMeCard
         filename="App Project"
         createdAt="20.02.2020"
@@ -51,7 +51,7 @@ const ShareWithMeSection = () => {
     <Section
       sectionHeader={recentlyUsedSectionHeader}
       sectionBody={recentlyUsedSectionContent}
-      contentSeparator={23}
+      contentSeparator={16}
     ></Section>
   );
 };
