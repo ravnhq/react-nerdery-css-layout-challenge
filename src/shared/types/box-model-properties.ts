@@ -8,6 +8,9 @@ export interface BoxModelProperties {
   paddingTop: number
   paddingLeft: number
   paddingRight: number
+
+  margin: string,
+  padding: string,
 }
 
 
