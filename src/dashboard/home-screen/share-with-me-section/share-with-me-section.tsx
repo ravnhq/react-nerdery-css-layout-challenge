@@ -15,15 +15,15 @@ const ShareWithMeSection = () => {
   const users = [
     {
       id: 1,
-      color: "red",
+      color: "var(--red)",
     },
     {
       id: 4,
-      color: "green",
+      color: "var(--green)",
     },
     {
       id: 6,
-      color: "blue",
+      color: "var(--orange)",
     },
   ];
 

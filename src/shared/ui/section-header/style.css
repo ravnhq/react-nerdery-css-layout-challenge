@@ -4,5 +4,5 @@
   font-size: 20px;
   line-height: 23px;
 
-  color: #343951;
+  color: var(--darker-gray);
 }

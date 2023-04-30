@@ -5,7 +5,7 @@ const SingleRectangleIcon = () => {
   return (
     <IconPlaceHolder
       className=""
-      color="#FF9F00"
+      color="var(--orange)"
       height={26}
       width={30}
       filled

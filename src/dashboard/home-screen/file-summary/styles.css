@@ -1,6 +1,6 @@
 .content-section{
   margin: 0 19px 0 22px;
-  background-color: #F5F6FC;
+  background-color: var(--lighter-gray);
   padding: 25px 19px;
   display: flex;
 

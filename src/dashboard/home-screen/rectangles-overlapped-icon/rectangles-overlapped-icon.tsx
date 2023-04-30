@@ -7,7 +7,7 @@ const RectanglesOverlappedIcon = () => {
     <>
       <IconPlaceHolder
         className="rectangles-overlapped square-1"
-        color="#FFD999"
+        color="var(--light-orange)"
         height={26}
         width={30}
         filled

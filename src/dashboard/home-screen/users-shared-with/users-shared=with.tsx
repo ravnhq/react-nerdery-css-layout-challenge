@@ -10,7 +10,7 @@ const UsersSharedWith = ({ users }: sharedWithProps) => {
   const firstUsersAvatars = firstUsers.map((user) => (
     <div
       className="shared-with"
-      style={{ border: `1px solid ${user.color ?? "#BEC0C8"}` }}
+      style={{ border: `1px solid ${user.color ?? "var(--gray)"}` }}
       key={user.id}
     ></div>
   ));

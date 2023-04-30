@@ -15,28 +15,28 @@ const RecentFilesTable = () => {
       filename: 'Travel Landing Page',
       numberOfMembersSharedWith: 5,
       lastModifiedDate: 'Mar 8, 2020',
-      type: '#FF9F00'
+      type: 'var(--orange)'
     },
     {
       id: 2,
       filename: 'True Photos',
       numberOfMembersSharedWith: 12,
       lastModifiedDate: 'Mar 8, 2020',
-      type: '#4AC29D'
+      type: 'var(--green)'
     },
     {
       id: 3,
       filename: 'Dashboard Structure',
       numberOfMembersSharedWith: 10,
       lastModifiedDate: 'Mar 9, 2020',
-      type: '#FF6860'
+      type: 'var(--red)'
     },
     {
       id: 4,
       filename: 'Character Illustration',
       numberOfMembersSharedWith: 3,
       lastModifiedDate: 'Mar 10, 2020',
-      type: '#FF9F00'
+      type: 'var(--orange)'
     },
 
   ]

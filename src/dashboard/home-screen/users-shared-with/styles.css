@@ -3,8 +3,8 @@
 
   width: 18px;
   height: 18px;
-  background: #ffffff;
-  border: 1px solid #bec0c8;
+  background: var(--white);
+  border: 1px solid var(--gray);
 
   display: inline-block;
 
@@ -17,7 +17,7 @@
   font-size: 8px;
   line-height: 16px;
 
-  color: #343951;
+  color: var(--darker-gray);
 
   text-align: center;
 

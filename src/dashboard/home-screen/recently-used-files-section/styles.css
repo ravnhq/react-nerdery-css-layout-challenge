@@ -4,7 +4,7 @@
   line-height: 14px;
   /* identical to box height */
 
-  color: #343951;
+  color: var(--darker-gray);
 }
 
 .recently-used-created-at {
@@ -13,5 +13,5 @@
   line-height: 9px;
   letter-spacing: 0.05em;
 
-  color: #858a9d;
+  color: var(--dark-gray);
 }

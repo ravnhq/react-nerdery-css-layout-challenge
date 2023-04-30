@@ -1,5 +1,5 @@
 .sidebar {
-  background: #343951;
+  background: var(--darker-gray);
   
   display: grid;
 

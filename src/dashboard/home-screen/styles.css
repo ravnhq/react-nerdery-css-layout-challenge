@@ -16,21 +16,21 @@
   line-height: 14px;
   /* identical to box height */
 
-  color: #343951;
+  color: var(--darker-gray);
 }
 
 .file-card-created-at {
   font-weight: 400;
   font-size: 8px;
-  line-height: 9px;
+  line-height: 13px;
   letter-spacing: 0.05em;
 
-  color: #858a9d;
+  color: var(--dark-gray);
 }
 
 .section-append-text {
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
-  color: #343951;
+  color: var(--darker-gray);
 }
