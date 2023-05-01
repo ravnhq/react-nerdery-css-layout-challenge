@@ -1,0 +1,40 @@
+.text-field {
+  text-align: center;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  height: 15px;
+  background-color: var(--white);
+  color: var(--light-gray);
+
+  padding: 7px 12px;
+
+  border-radius: 5px;
+}
+
+.text-field .icon {
+  outline: 1px solid var(--light-gray);
+}
+
+.text-input {
+  width: 100%;
+  border: none;
+  margin-left: 5px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+
+}
+
+.text-input:focus {
+  outline: none;
+}
+
+.text-input::placeholder{
+  color: var(--light-gray);
+}

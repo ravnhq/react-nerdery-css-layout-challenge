@@ -1,4 +1,4 @@
-import MenuIcon from "../menu-icon";
+import IconPlaceHolder from "../icon-placeholder";
 import "./styles.css";
 
 interface MenuItemProps {
@@ -11,7 +11,7 @@ interface MenuItemProps {
 const MenuItem = ({ name, className, gap, color }: MenuItemProps) => {
   return (
     <div className={`menu-item ${className ?? ''}`} style={{gap, color}}>
-      <MenuIcon />
+      <IconPlaceHolder />
       <div className="menu-item-name">{name}</div>
     </div>
   );

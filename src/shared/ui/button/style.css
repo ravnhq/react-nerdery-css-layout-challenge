@@ -3,14 +3,14 @@
   width: 116px;
   height: 30px;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
 
-  background: #ff9f00;
+  background: var(--orange);
   border-radius: 7px;
   font-style: normal;
   font-weight: 400;
   font-size: 10px;
   line-height: 12px;
 
-  color: #FFFFFF;
+  color: var(--white);
 }

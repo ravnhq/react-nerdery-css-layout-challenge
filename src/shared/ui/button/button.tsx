@@ -1,7 +1,7 @@
 import "./style.css"
 
 interface ButtonProps {
-  children: string,
+  children: React.ReactNode,
 }
 
 const Button = ({children}: ButtonProps) => {
