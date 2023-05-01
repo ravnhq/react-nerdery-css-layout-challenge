@@ -1,0 +1,37 @@
+.speech-bubble-menu {
+  background: #464c61;
+  border-radius: 9px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+
+  color: var(--gray);
+
+  position: relative;
+
+  width: 116px;
+}
+
+.speech-bubble-menu .menu-items {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  margin: 19px 5px 17px 14px;
+}
+
+.speech-bubble-tail {
+  position: absolute;
+  left: 13px;
+  bottom: -4px;
+  width: 10px;
+  height: 10px;
+
+  background-color: #464c61;
+
+  transform: rotate(45deg) skew(10deg,10deg);
+
+  border-radius: 1px;
+}

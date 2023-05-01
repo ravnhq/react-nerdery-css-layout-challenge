@@ -1,0 +1,17 @@
+.table-head {
+  margin-bottom: 2px;
+}
+
+.sub-text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+
+  color: var(--dark-gray);
+}
+
+.table-row {
+  background-color: var(--white);
+  padding: 11px 12px 10px;
+  border-radius: 10px;
+}
