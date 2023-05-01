@@ -7,8 +7,12 @@ const Cards: FC<CardsProps> = ({ data, shared }) => {
   if (shared) {
     return (
       <div className="cards mt-16">
-        {data.map((file) => (
-          <CardSmall footer={file.date} numberUsers={file.users}>
+        {data.map((file, index) => (
+          <CardSmall
+            key={Date.now() + 1 * index}
+            footer={file.date}
+            numberUsers={file.users}
+          >
             {file.name}
           </CardSmall>
         ))}
@@ -17,8 +21,12 @@ const Cards: FC<CardsProps> = ({ data, shared }) => {
   }
   return (
     <div className="cards mt-23">
-      {data.map((file) => (
-        <CardLarge footer={file.date} numberUsers={file.users}>
+      {data.map((file, index) => (
+        <CardLarge
+          key={Date.now() + 1 * index}
+          footer={file.date}
+          numberUsers={file.users}
+        >
           {file.name}
         </CardLarge>
       ))}

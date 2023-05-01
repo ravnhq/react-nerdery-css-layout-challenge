@@ -22,6 +22,9 @@
 .flex{
     display: flex;
 }
+.grid{
+    display: grid;
+}
 .relative{
     position: relative;
 }
@@ -37,6 +40,15 @@
 }
 .fs-12{
     font-size: 12px;
+}
+.fs-14{
+    font-size: 14px;
+}
+.fs-16{
+    font-size: 16px;
+}
+.fs-24{
+    font-size: 24px;
 }
 .mt-30{
     margin-top: 30px;
@@ -75,6 +87,10 @@
 .gap-50{
     gap:50px
 }
+.graySub{
+    color:var(--gray-fc);
+}
+
 .alignCenter{
     align-items: center;
 }

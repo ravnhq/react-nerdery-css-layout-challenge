@@ -14,18 +14,31 @@ const CardSmall: FC<Card> = ({ children, footer, numberUsers }) => {
             {numberUsers.map((user, index) => {
               const moreUsers = index - 2;
               if (index === 0) {
-                return <div className={`circle ${colors[user.type]}`}></div>;
+                return (
+                  <div
+                    key={Date.now() + (index + 2) + 1}
+                    className={`circle ${colors[user.type]}`}
+                  ></div>
+                );
               }
               if (index < 3) {
                 return (
                   <div
+                    key={Date.now() + (index + 2) + 1}
                     className={`circle absolute ${colors[user.type]}`}
                     style={{ left: `${12 * index}px` }}
                   ></div>
                 );
               }
               if (index === numberUsers.length - 1) {
-                return <div className="absolute cardCounter">+{moreUsers}</div>;
+                return (
+                  <div
+                    key={Date.now() + (index + 2) + 1}
+                    className="absolute cardCounter"
+                  >
+                    +{moreUsers}
+                  </div>
+                );
               }
             })}
           </div>

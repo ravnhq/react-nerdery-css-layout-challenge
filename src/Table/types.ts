@@ -2,7 +2,7 @@ export interface Data {
   name: string;
   members: number;
   date: string;
-  type: number;
+  type?: number;
 }
 export interface TableBody {
   data: Data[];
