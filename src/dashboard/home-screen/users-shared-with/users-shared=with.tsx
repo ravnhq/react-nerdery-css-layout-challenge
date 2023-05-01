@@ -1,8 +1,8 @@
-import SharedUser from "../../../shared/types/user-shared-with";
+import FileMember from "../../../shared/types/file-member";
 import "./styles.css";
 
 interface sharedWithProps {
-  users: SharedUser[];
+  users: FileMember[];
 }
 
 const UsersSharedWith = ({ users }: sharedWithProps) => {

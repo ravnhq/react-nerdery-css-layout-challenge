@@ -1,10 +1,10 @@
-import SharedUser from "./user-shared-with";
+import FileMember from "./file-member";
 
 interface FileCardProperties {
   filename: string,
   createdAt: string,
 
-  usersSharedWith: SharedUser[]
+  usersSharedWith: FileMember[]
 }
 
 export default FileCardProperties

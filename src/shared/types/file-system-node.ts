@@ -1,4 +1,4 @@
-import FileMember from "./user-shared-with";
+import FileMember from "./file-member";
 
 export interface FileSystemNode {
   id: number,
