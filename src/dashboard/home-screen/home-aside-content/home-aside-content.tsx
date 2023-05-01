@@ -36,7 +36,7 @@ const HomeAsideContent = () => {
         sectionBody={<StorageDetails />}
       />
       <div className="home-advertising">
-        <BuyAdvertising boxProperties={{paddingBottom: 11}}/>
+        <BuyAdvertising />
       </div>
     </Flex>
   );
