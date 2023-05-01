@@ -25,7 +25,7 @@ const RecentFilesTable = () => {
           <Flex
             style={{ flexBasis: "50%", display: "inline-flex" }}
             alignItems="center"
-            className="file-card-filename"
+            className="title-text"
             gap={12}
           >
             <IconPlaceHolder

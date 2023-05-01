@@ -3,7 +3,7 @@
   width: 116px;
   height: 30px;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
 
   background: var(--orange);
   border-radius: 7px;

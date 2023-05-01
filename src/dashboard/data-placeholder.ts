@@ -1,6 +1,7 @@
 import { FileSystemNode } from "../shared/types/file-system-node";
 import RecentFile from "../shared/types/recent-file";
 import FileMember from "../shared/types/file-member";
+import { StorageReport } from "../shared/types/storage-detail";
 
 const generateMembersArray = (n: number): FileMember[] =>
   Array(n).map((_, i) => {
@@ -116,3 +117,40 @@ export const getSharedWithMeData = (): FileSystemNode[] => {
     },
   ];
 };
+
+
+export const getStorageReport = (): StorageReport => {
+  return {
+    totalSpaceInGB: 500,
+    documentTypes: [
+      {
+        id: 1,
+        type: "Documents",
+        color: "var(--orange)",
+        numberOfFiles: 720,
+        spaceInGB: 200
+      },
+      {
+        id: 2,
+        type: "Documents",
+        color: "var(--blue)",
+        numberOfFiles: 720,
+        spaceInGB: 125
+      },
+      {
+        id: 3,
+        type: "Documents",
+        color: "var(--green)",
+        numberOfFiles: 720,
+        spaceInGB: 75
+      },
+      {
+        id: 4,
+        type: "Documents",
+        color: "var(--light-gray)",
+        numberOfFiles: 720,
+        spaceInGB: 50
+      },
+    ]
+  }
+}

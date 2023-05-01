@@ -1,4 +1,5 @@
 import { CustomBoxModel } from "../../types/box-model-properties";
+import type * as CSS from 'csstype'
 import "./styles.css";
 
 interface FlexProps extends CustomBoxModel {
@@ -6,52 +7,13 @@ interface FlexProps extends CustomBoxModel {
   className?: string;
   style?: React.CSSProperties;
   type?: "row" | "column";
-  justifyContent?:
-    | "flex-start"
-    | "flex-end"
-    | "center"
-    | "space-between"
-    | "space-around"
-    | "space-evenly"
-    | "initial"
-    | "inherit"
-    | "stretch";
+  justifyContent?: CSS.Property.JustifyContent;
 
-  justifyItems?:
-    | "normal"
-    | "stretch"
-    | "center"
-    | "flex-start"
-    | "flex-end"
-    | "start"
-    | "end"
-    | "baseline"
-    | "initial"
-    | "inherit";
+  justifyItems?: CSS.Property.JustifyItems;
 
-  alignContent?:
-    | "normal"
-    | "stretch"
-    | "center"
-    | "flex-start"
-    | "flex-end"
-    | "start"
-    | "end"
-    | "baseline"
-    | "initial"
-    | "inherit";
+  alignContent?: CSS.Property.AlignContent;
 
-  alignItems?:
-    | "normal"
-    | "stretch"
-    | "center"
-    | "flex-start"
-    | "flex-end"
-    | "start"
-    | "end"
-    | "baseline"
-    | "initial"
-    | "inherit";
+  alignItems?: CSS.Property.AlignItems;
 
   gap?: number
 }
