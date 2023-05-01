@@ -3,10 +3,12 @@ import Table from "./Table/Table";
 import Actions from "./actions/Actions";
 import Button from "./button/Button";
 import Cards from "./card/Cards";
+import Circle from "./circle/Circle";
 import Icon from "./icon/Icon";
 import RectangleSmall from "./rectangle/RectangleSmall";
 import Section from "./section/Section";
 import SideBar from "./sideBar/SideBar";
+import Storage from "./storage/Storage";
 
 const tableData = [
   { name: "Travel Landing Page", members: 5, date: "Mar 8, 2020", type: 0 },
@@ -100,10 +102,16 @@ function App() {
         </Section>
       </div>
       <div className="cell">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
-        officia voluptatem magni repudiandae, repellat doloremque, commodi,
-        facere voluptatum ducimus esse perferendis amet nostrum sit dignissimos!
-        Tempore distinctio labore ipsum quos.
+        <div className="flex spaceBetween center">
+          <div className="flex gap-13">
+            <Icon full={true}></Icon>
+            <Icon full={true}></Icon>
+          </div>
+          <div className="flex center gap-1">
+            <span className="fs-12">Name</span> <Circle />
+          </div>
+        </div>
+        <Storage />
       </div>
     </div>
   );
