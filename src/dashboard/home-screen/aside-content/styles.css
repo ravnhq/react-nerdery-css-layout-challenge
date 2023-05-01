@@ -1,0 +1,14 @@
+.storage-details {
+  background-color: var(--lighter-gray);
+}
+
+.user-name{
+  display: inline;
+}
+
+.user-propic{
+  border-radius: 15px;
+  width: 31px;
+  height: 31px;
+  background-color: var(--shadow-color);
+}

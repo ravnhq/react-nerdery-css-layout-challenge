@@ -2,7 +2,6 @@
 
 :root {
 
-  
   --darker-gray: #343951;
   --dark-gray: #858A9D;
   --gray: #BEC0C8;
@@ -16,6 +15,9 @@
   --green: #4AC29D;
   --red: #FF6860;
   --blue: #689FF8;
+
+  --shadow-color: #C4C4C4;
+  --light-color: #E0E7F1;
 
   --title-color: var(--dark-gray);
   --bg-sidebar-background: var(--dark-gray);
