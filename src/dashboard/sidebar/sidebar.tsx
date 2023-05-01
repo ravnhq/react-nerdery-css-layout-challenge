@@ -34,7 +34,7 @@ const Sidebar = () => {
             size={21}
             filled
           >
-            <p>+</p>
+            <span>+</span>
           </IconPlaceHolder>
         </Button>
       </div>
