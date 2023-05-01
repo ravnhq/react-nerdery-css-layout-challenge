@@ -1,0 +1,24 @@
+.icon{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+}
+.white{
+    outline: 1px solid white;
+}
+.gray{
+    outline: 1px solid var(--gray-fc);
+}
+.light-gray{
+    outline: 1px solid var(--gray-placeholder-fc);
+}
+.dark-blue{
+    outline: 1px solid var(--dark-blue-bg);
+}
+.lighter-gray{
+    outline: 1px solid var(--light-gray-bg);
+}
+.full{
+    background-color: var(--gray-full);
+    outline: 1px solid var(--gray-full)
+}

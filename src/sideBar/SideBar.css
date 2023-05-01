@@ -1,0 +1,17 @@
+.sideBar{
+    border-bottom: 1px solid var(--dark-gray-bg);
+    margin-top: 9px;
+    padding: 27px;
+}
+.sideBarList{
+    margin-top: 68px;
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+    list-style: none;
+    font-size: 10px;
+}
+.sideBarItem{
+    display: flex;
+    align-items: center;
+}
