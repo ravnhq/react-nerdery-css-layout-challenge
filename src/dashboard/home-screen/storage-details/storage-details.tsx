@@ -13,9 +13,24 @@ const StorageDetails = () => {
     (spaceUsed, currentType) => spaceUsed + currentType.spaceInGB,
     0
   );
+
+  const usedPercentage = (storageUsed / storageReport.totalSpaceInGB) * 100;
   return (
     <Flex type="column" alignItems="center" gap={20}>
-      <StorageGraph></StorageGraph>
+      <div className="storage-graph">
+        <StorageGraph></StorageGraph>
+        <Flex
+          className="storage-used"
+          type="column"
+          justifyContent="center"
+          gap={5}
+        >
+          <div className="text-center">
+            <span className="used-percentage">{usedPercentage}</span>%
+          </div>
+          <span style={{fontSize: 14, lineHeight: "16px", color: "var(--dark-gray)"}}>Used</span>
+        </Flex>
+      </div>
       <div className="subtitle-text">
         {storageUsed} GB of {storageReport.totalSpaceInGB} GB used
       </div>
