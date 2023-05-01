@@ -66,9 +66,9 @@ const RecentFilesTable = () => {
             {file.filename}
           </Flex>
           <div style={{ flexBasis: "20%" }}>
-            {file.numberOfMembersSharedWith} members
+            {file.members.length} members
           </div>
-          <div style={{ flexBasis: "20%" }}>{file.lastModifiedDate}</div>
+          <div style={{ flexBasis: "20%" }}>{file.updatedAt}</div>
           <div style={{ flexBasis: "10%" }}>
             <Flex justifyContent="flex-end">
               <HorizontalEllipsisIcon />
