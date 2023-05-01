@@ -1,0 +1,17 @@
+.file-type-space {
+  background: white;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 8px;
+  height: 21px;
+  line-height: 21px;
+  width: 54px;
+  text-align: center;
+  
+  color: #343951;
+  display: table-cell;
+  vertical-align: middle;
+  margin-left: 40px;
+
+  border-radius: 4px;
+}
