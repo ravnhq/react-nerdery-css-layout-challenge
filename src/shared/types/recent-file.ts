@@ -1,9 +1,8 @@
-interface RecentFile {
-  id: number,
-  filename: string,
-  numberOfMembersSharedWith: number,
-  lastModifiedDate: string,
-  type: string
+import { FileSystemNode } from "./file-system-node"
+
+interface RecentFile extends Omit<FileSystemNode, 'createdAt'>{
+  updatedAt: string,
+  type: string,
 }
 
 export default RecentFile
