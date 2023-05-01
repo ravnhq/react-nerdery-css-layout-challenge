@@ -1,6 +1,6 @@
 .dashboard{
   height: 100vh;
-  background-color: #E5E5E5;
+  background-color: var(--white);
   display: grid;
   grid-template-columns: 172px 1fr;
 }

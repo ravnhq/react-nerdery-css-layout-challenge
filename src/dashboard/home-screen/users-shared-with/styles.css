@@ -1,0 +1,29 @@
+.shared-with {
+  box-sizing: border-box;
+
+  width: 18px;
+  height: 18px;
+  background: var(--white);
+  border: 1px solid var(--gray);
+
+  display: inline-block;
+
+  border-radius: 9px;
+
+  margin-left: -6px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 16px;
+
+  color: var(--darker-gray);
+
+  text-align: center;
+
+  vertical-align: middle;
+}
+
+.shared-with div {
+  vertical-align: middle;
+}

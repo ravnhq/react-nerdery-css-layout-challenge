@@ -5,14 +5,14 @@
   font-size: 10px;
   line-height: 12px;
 
-  color: #858a9d;
+  color: var(--dark-gray);
   display: flex;
   align-items: center;
   position: relative;
 }
 
 .nav-item.active {
-  color: #ffffff;
+  color: var(--white);
 }
 
 .nav-item .icon {
@@ -21,11 +21,11 @@
   height: 15px;
   margin-left: 32px;
 
-  outline: 1px solid #858a9d;
+  border: 1px solid var(--dark-gray);
 }
 
 .nav-item.active .icon {
-  outline: 1px solid #ffffff;
+  border: 1px solid var(--white);
 }
 
 .nav-item .nav-item-name {
@@ -36,6 +36,6 @@
   position: absolute;
   height: 100%;
   width: 7px;
-  background: #ffffff;
+  background: var(--white);
   border-radius: 0 7px 7px 0;
 }
