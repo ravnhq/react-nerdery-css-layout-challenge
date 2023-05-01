@@ -2,11 +2,12 @@ import Flex from "../../../shared/ui/flex";
 import IconPlaceHolder from "../../../shared/ui/icon-placeholder";
 import Section from "../../../shared/ui/section";
 import SectionHeader from "../../../shared/ui/section-header";
+import BuyAdvertising from "../buy-advertising/buy-advertising";
 import StorageDetails from "../storage-details/storage-details";
 
 import "./styles.css";
 
-const AsideContent = () => {
+const HomeAsideContent = () => {
   return (
     <Flex type="column" className="storage-details">
       <Flex
@@ -34,8 +35,11 @@ const AsideContent = () => {
         contentSeparator={22}
         sectionBody={<StorageDetails />}
       />
+      <div className="home-advertising">
+        <BuyAdvertising boxProperties={{paddingBottom: 11}}/>
+      </div>
     </Flex>
   );
 };
 
-export default AsideContent;
+export default HomeAsideContent;
