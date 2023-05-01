@@ -1,0 +1,22 @@
+.menu-item {
+  font-style: normal;
+
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+
+  width: 100%;
+}
+
+
+.menu-item .icon {
+  box-sizing: border-box;
+  width: 15px;
+  height: 15px;
+
+  border: 1px solid var(--white);
+}

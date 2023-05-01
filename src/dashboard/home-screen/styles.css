@@ -1,0 +1,35 @@
+.home-screen{
+  display: grid;
+  grid-template-columns: 1fr 252px;
+  grid-template-rows: 1fr;
+}
+
+
+.details {
+  border: 3px solid blue;
+}
+
+
+.title-text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+
+  color: var(--darker-gray);
+}
+
+.subtitle-text {
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 13px;
+  letter-spacing: 0.05em;
+
+  color: var(--dark-gray);
+}
+
+.section-append-text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: var(--darker-gray);
+}
