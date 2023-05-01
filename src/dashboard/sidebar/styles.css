@@ -1,0 +1,21 @@
+.sidebar {
+  background: var(--darker-gray);
+  
+  display: grid;
+
+  grid-template-rows: 108px 299px 1fr;
+  grid-template-columns: 1fr;
+}
+
+
+.sidebar-footer{
+  display: flex;
+  flex-direction: column;
+
+  justify-content: flex-end;
+  align-items: center;
+  
+  margin-bottom: 27px;
+  padding: 0 28px 0;
+}
+

@@ -1,0 +1,49 @@
+.file-type-space {
+  background: white;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 8px;
+  height: 21px;
+  line-height: 21px;
+  width: 54px;
+  text-align: center;
+  
+  color: #343951;
+  display: table-cell;
+  vertical-align: middle;
+  margin-left: 40px;
+
+  border-radius: 4px;
+}
+
+.storage-graph {
+  position: relative;
+}
+
+.storage-used {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 13px;
+  margin-bottom: auto;
+  border-radius: 115px;
+  position: absolute;
+  background-color: var(--white);
+  width: 115px;
+  height: 115px;
+  text-align: center;
+}
+
+.used-percentage {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  display: inline-block;
+
+  color: var(--darker-gray);
+  vertical-align: middle;
+}
+
