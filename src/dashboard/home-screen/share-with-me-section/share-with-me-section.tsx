@@ -3,6 +3,7 @@ import Section from "../../../shared/ui/section";
 import Flex from "../../../shared/ui/flex";
 
 import ShareWithMeCard from "../share-with-me-card";
+import { getSharedWithMeData } from "../../data-placeholder";
 
 const ShareWithMeSection = () => {
   const recentlyUsedSectionHeader = (
@@ -12,38 +13,18 @@ const ShareWithMeSection = () => {
     />
   );
 
-  const users = [
-    {
-      id: 1,
-      color: "var(--red)",
-    },
-    {
-      id: 4,
-      color: "var(--green)",
-    },
-    {
-      id: 6,
-      color: "var(--orange)",
-    },
-  ];
+  const sharedWithMeFiles = getSharedWithMeData() 
 
   const recentlyUsedSectionContent = (
     <Flex gap={14}>
-      <ShareWithMeCard
-        filename="App Project"
-        createdAt="20.02.2020"
-        usersSharedWith={users}
-      />
-      <ShareWithMeCard
-        filename="App Project"
-        createdAt="20.02.2020"
-        usersSharedWith={users}
-      />
-      <ShareWithMeCard
-        filename="App Project"
-        createdAt="20.02.2020"
-        usersSharedWith={users}
-      />
+      {sharedWithMeFiles.map(file => 
+        <ShareWithMeCard
+          key={file.id}
+          filename={file.filename}
+          createdAt={file.createdAt}
+          usersSharedWith={file.members}
+        />
+      )}
     </Flex>
   );
 

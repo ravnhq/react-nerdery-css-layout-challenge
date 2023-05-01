@@ -5,34 +5,25 @@ import Flex from "../../../shared/ui/flex";
 
 import "./styles.css";
 import RecentlyUsedFileSectionCard from "../recently-used-file-card";
+import { getRecentlyUsedFiles } from "../../data-placeholder";
 
 const RecentlyUsedFilesSection = () => {
   const recentlyUsedSectionHeader = (
     <SectionHeader title="Recently Used" append={<ContentSlickDots />} />
   );
 
-
-  const users = [
-    {
-      id: 1,
-    },
-    {
-      id: 4,
-    },
-    {
-      id: 6,
-    },
-    {
-      id: 8,
-    },
-  ];
-
+  const recentlyUsedFiles = getRecentlyUsedFiles();
 
   const recentlyUsedSectionContent = (
     <Flex gap={14}>
-      <RecentlyUsedFileSectionCard filename="App Project" createdAt="20.02.2020" usersSharedWith={users}/>
-      <RecentlyUsedFileSectionCard filename="App Project" createdAt="20.02.2020" usersSharedWith={users}/>
-      <RecentlyUsedFileSectionCard filename="App Project" createdAt="20.02.2020" usersSharedWith={users}/>
+      {recentlyUsedFiles.map((file) => (
+        <RecentlyUsedFileSectionCard
+          key={file.id}
+          filename={file.filename}
+          createdAt={file.createdAt}
+          usersSharedWith={file.members}
+        />
+      ))}
     </Flex>
   );
 

@@ -5,41 +5,12 @@ import { ReactComponent as HorizontalEllipsisIcon } from "../../../assets/horizo
 
 import "./styles.css";
 import RecentFile from "../../../shared/types/recent-file";
+import { getRecentFiles } from "../../data-placeholder";
 
 
 const RecentFilesTable = () => {
 
-  const files: RecentFile[] = [
-    {
-      id: 1,
-      filename: 'Travel Landing Page',
-      numberOfMembersSharedWith: 5,
-      lastModifiedDate: 'Mar 8, 2020',
-      type: 'var(--orange)'
-    },
-    {
-      id: 2,
-      filename: 'True Photos',
-      numberOfMembersSharedWith: 12,
-      lastModifiedDate: 'Mar 8, 2020',
-      type: 'var(--green)'
-    },
-    {
-      id: 3,
-      filename: 'Dashboard Structure',
-      numberOfMembersSharedWith: 10,
-      lastModifiedDate: 'Mar 9, 2020',
-      type: 'var(--red)'
-    },
-    {
-      id: 4,
-      filename: 'Character Illustration',
-      numberOfMembersSharedWith: 3,
-      lastModifiedDate: 'Mar 10, 2020',
-      type: 'var(--orange)'
-    },
-
-  ]
+  const files: RecentFile[] = getRecentFiles();
 
   return (
     <Flex type="column" gap={16}>
