@@ -25,8 +25,8 @@ const RecentlyUsedFileSectionCard = ({
 
   const recentlyUsedFileCardBody = (
     <Flex type="column" boxProperties={{ margin: "0px 7px 11px" }} gap={10}>
-      <div className="file-card-filename">{filename}</div>
-      <div className="file-card-created-at">Created: {createdAt}</div>
+      <div className="title-text">{filename}</div>
+      <div className="subtitle-text">Created: {createdAt}</div>
     </Flex>
   );
 

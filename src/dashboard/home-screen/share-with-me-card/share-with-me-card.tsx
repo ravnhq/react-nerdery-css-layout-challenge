@@ -22,8 +22,8 @@ const ShareWithMeCard = ({filename, createdAt, usersSharedWith} : FileCardProper
 
   const shareWithMeBody = (
     <Flex type="column" boxProperties={{ margin: "0px 6px 0px" }} gap={2}>
-      <div className="file-card-filename">{filename}</div>
-      <div className="file-card-created-at">Created: {createdAt}</div>
+      <div className="title-text">{filename}</div>
+      <div className="subtitle-text">Created: {createdAt}</div>
     </Flex>
   );
 

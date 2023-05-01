@@ -10,16 +10,15 @@
 }
 
 
-.file-card-filename {
+.title-text {
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
-  /* identical to box height */
 
   color: var(--darker-gray);
 }
 
-.file-card-created-at {
+.subtitle-text {
   font-weight: 400;
   font-size: 8px;
   line-height: 13px;
