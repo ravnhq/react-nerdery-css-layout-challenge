@@ -91,6 +91,10 @@
     color:var(--gray-fc);
 }
 
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
 .alignCenter{
     align-items: center;
 }
