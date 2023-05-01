@@ -1,0 +1,162 @@
+:root{
+    --sidebar-bg: #343951;
+    --gray-full: #C4C4C4;
+    --cell-bg: #F5F6FC;
+    --gray-pale-outline: #BEC0C8;
+    --light-orange-gradient: #FF9F00;
+    --dark-orange-gradient: #FF6860;
+    --blue-gradient: #689EF8;
+    --gray-fc: #858A9D;
+    --dark-gray-bg: #464C61;
+    --yellow-button: #FF9F00;
+    --yellow-pale-bg: #FFD999;
+    --yellow-secondary-button: #FFB233;
+    --gray-placeholder-fc: #BCBECA;
+    --dark-blue-bg: #343951;
+    --light-gray-bg: #9D9FAF;
+    --green-bg: #4AC29D;
+    --light-blue-bg: #689FF8;
+    --gray-separation: #E0E7F1;
+}
+
+.flex{
+    display: flex;
+}
+.grid{
+    display: grid;
+}
+.relative{
+    position: relative;
+}
+.absolute{
+    position: absolute;
+}
+
+.fs-8{
+    font-size: 8px;
+}
+.fs-10{
+    font-size: 10px;
+}
+.fs-12{
+    font-size: 12px;
+}
+.fs-14{
+    font-size: 14px;
+}
+.fs-16{
+    font-size: 16px;
+}
+.fs-24{
+    font-size: 24px;
+}
+.mt-30{
+    margin-top: 30px;
+}
+.mt-10{
+    margin-top:10px
+}
+.mt-6{
+    margin-top: 6px;
+}
+.mt-2{
+    margin-top: 2px;
+}
+
+.left-5{
+    left: 5px;
+}
+.-top-5{
+    top: -5px;
+}
+.-top-10{
+    top:-10px;
+}
+.right-0{
+    right:0;
+}
+.gap-7{
+    gap:7px;
+}
+.gap-8{
+    gap: 8px;
+}
+.gap-25{
+    gap: 25px;
+}
+.gap-50{
+    gap:50px
+}
+.graySub{
+    color:var(--gray-fc);
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.alignCenter{
+    align-items: center;
+}
+.flexColumn{
+    flex-direction: column;
+}
+
+.layout{
+    display: grid;
+    grid-template-columns: 172px 1fr 252px;
+    gap: 20px;
+}
+
+.cell{
+    /* outline: 1px solid blue; */
+    height: 100vh;
+    background-color: var(--cell-bg);
+}
+
+.cell:first-child{
+    background-color: var(--sidebar-bg);
+    color: var(--gray-fc);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 10px;
+}
+
+.sideBarActions{
+    padding: 27px;
+}
+.cell:nth-child(2){
+    padding: 25px 19px 25px 16px;
+}
+/* ***   *** */
+
+.searchBar{
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    padding: 7px 12px;
+}
+.searchBar input{
+    border: none;
+    font-size: 10px;
+}
+.searchBar ::placeholder{
+    color:var(--gray-placeholder-fc);
+}
+
+.cell:last-child{
+    padding: 25px 25px;
+}
+
+.spaceBetween{
+    justify-content: space-between;
+}
+.gap-13{
+    gap:13px;
+}
+.gap-1{
+    gap:5px;
+}
